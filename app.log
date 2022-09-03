@@ -6977,3 +6977,1638 @@
 [INFO] : 03-09-2022 12:31:18 - quarter scores formatted
 [INFO] : 03-09-2022 12:31:18 - headless: False - 387.22677397727966
 
+[INFO] : 03-09-2022 12:45:26 - new season type
+[INFO] : 03-09-2022 12:45:53 - Day 1: Thursday, August 5, 2021
+[INFO] : 03-09-2022 12:46:02 - new match
+[INFO] : 03-09-2022 12:46:49 - new season type
+[INFO] : 03-09-2022 12:47:20 - Day 1: Thursday, August 5, 2021
+[INFO] : 03-09-2022 12:47:21 - new match
+[INFO] : 03-09-2022 12:47:22 - writing to 2021/preseason/week1/01-cowboys-steelers.csv
+[INFO] : 03-09-2022 12:47:22 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:23 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:34 - Day 2: Thursday, August 12, 2021
+[INFO] : 03-09-2022 12:47:34 - new match
+[INFO] : 03-09-2022 12:47:34 - writing to 2021/preseason/week2/02-washington-patriots.csv
+[INFO] : 03-09-2022 12:47:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:35 - new match
+[INFO] : 03-09-2022 12:47:35 - writing to 2021/preseason/week2/03-steelers-eagles.csv
+[INFO] : 03-09-2022 12:47:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:35 - Day 3: Friday, August 13, 2021
+[INFO] : 03-09-2022 12:47:35 - new match
+[INFO] : 03-09-2022 12:47:35 - writing to 2021/preseason/week2/04-titans-falcons.csv
+[INFO] : 03-09-2022 12:47:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:35 - new match
+[INFO] : 03-09-2022 12:47:35 - writing to 2021/preseason/week2/05-bills-lions.csv
+[INFO] : 03-09-2022 12:47:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:35 - new match
+[INFO] : 03-09-2022 12:47:35 - writing to 2021/preseason/week2/06-cowboys-cardinals.csv
+[INFO] : 03-09-2022 12:47:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:36 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:36 - Day 4: Saturday, August 14, 2021
+[INFO] : 03-09-2022 12:47:36 - new match
+[INFO] : 03-09-2022 12:47:36 - writing to 2021/preseason/week2/07-dolphins-bears.csv
+[INFO] : 03-09-2022 12:47:36 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:36 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:36 - new match
+[INFO] : 03-09-2022 12:47:36 - writing to 2021/preseason/week2/08-broncos-vikings.csv
+[INFO] : 03-09-2022 12:47:39 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:39 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:39 - new match
+[INFO] : 03-09-2022 12:47:39 - writing to 2021/preseason/week2/09-browns-jaguars.csv
+[INFO] : 03-09-2022 12:47:40 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:40 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:40 - new match
+[INFO] : 03-09-2022 12:47:40 - writing to 2021/preseason/week2/10-saints-ravens.csv
+[INFO] : 03-09-2022 12:47:40 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:40 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:40 - new match
+[INFO] : 03-09-2022 12:47:40 - writing to 2021/preseason/week2/11-jets-giants.csv
+[INFO] : 03-09-2022 12:47:40 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:40 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:40 - new match
+[INFO] : 03-09-2022 12:47:40 - writing to 2021/preseason/week2/12-bengals-buccaneers.csv
+[INFO] : 03-09-2022 12:47:40 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:40 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:40 - new match
+[INFO] : 03-09-2022 12:47:40 - writing to 2021/preseason/week2/13-texans-packers.csv
+[INFO] : 03-09-2022 12:47:40 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:40 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:40 - new match
+[INFO] : 03-09-2022 12:47:41 - writing to 2021/preseason/week2/14-chiefs-49ers.csv
+[INFO] : 03-09-2022 12:47:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:41 - new match
+[INFO] : 03-09-2022 12:47:41 - writing to 2021/preseason/week2/15-seahawks-raiders.csv
+[INFO] : 03-09-2022 12:47:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:41 - new match
+[INFO] : 03-09-2022 12:47:41 - writing to 2021/preseason/week2/16-chargers-rams.csv
+[INFO] : 03-09-2022 12:47:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:41 - Day 5: Sunday, August 15, 2021
+[INFO] : 03-09-2022 12:47:41 - new match
+[INFO] : 03-09-2022 12:47:41 - writing to 2021/preseason/week2/17-panthers-colts.csv
+[INFO] : 03-09-2022 12:47:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:48 - Day 6: Thursday, August 19, 2021
+[INFO] : 03-09-2022 12:47:49 - new match
+[INFO] : 03-09-2022 12:47:49 - writing to 2021/preseason/week3/18-patriots-eagles.csv
+[INFO] : 03-09-2022 12:47:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:49 - Day 7: Friday, August 20, 2021
+[INFO] : 03-09-2022 12:47:49 - new match
+[INFO] : 03-09-2022 12:47:50 - writing to 2021/preseason/week3/19-chiefs-cardinals.csv
+[INFO] : 03-09-2022 12:47:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:50 - new match
+[INFO] : 03-09-2022 12:47:50 - writing to 2021/preseason/week3/20-bengals-washington.csv
+[INFO] : 03-09-2022 12:47:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:50 - Day 8: Saturday, August 21, 2021
+[INFO] : 03-09-2022 12:47:50 - new match
+[INFO] : 03-09-2022 12:47:50 - writing to 2021/preseason/week3/21-bills-bears.csv
+[INFO] : 03-09-2022 12:47:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:55 - new match
+[INFO] : 03-09-2022 12:47:55 - writing to 2021/preseason/week3/22-jets-packers.csv
+[INFO] : 03-09-2022 12:47:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:55 - new match
+[INFO] : 03-09-2022 12:47:55 - writing to 2021/preseason/week3/23-falcons-dolphins.csv
+[INFO] : 03-09-2022 12:47:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:55 - new match
+[INFO] : 03-09-2022 12:47:55 - writing to 2021/preseason/week3/24-ravens-panthers.csv
+[INFO] : 03-09-2022 12:47:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:55 - new match
+[INFO] : 03-09-2022 12:47:56 - writing to 2021/preseason/week3/25-lions-steelers.csv
+[INFO] : 03-09-2022 12:47:56 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:56 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:56 - new match
+[INFO] : 03-09-2022 12:47:56 - writing to 2021/preseason/week3/26-titans-buccaneers.csv
+[INFO] : 03-09-2022 12:47:56 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:57 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:57 - new match
+[INFO] : 03-09-2022 12:47:59 - writing to 2021/preseason/week3/27-texans-cowboys.csv
+[INFO] : 03-09-2022 12:47:59 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:59 - quarter scores formatted
+[INFO] : 03-09-2022 12:47:59 - new match
+[INFO] : 03-09-2022 12:48:00 - writing to 2021/preseason/week3/28-colts-vikings.csv
+[INFO] : 03-09-2022 12:48:00 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:00 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:00 - new match
+[INFO] : 03-09-2022 12:48:00 - writing to 2021/preseason/week3/29-raiders-rams.csv
+[INFO] : 03-09-2022 12:48:00 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:00 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:00 - new match
+[INFO] : 03-09-2022 12:48:00 - writing to 2021/preseason/week3/30-broncos-seahawks.csv
+[INFO] : 03-09-2022 12:48:00 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:00 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:00 - Day 9: Sunday, August 22, 2021
+[INFO] : 03-09-2022 12:48:00 - new match
+[INFO] : 03-09-2022 12:48:00 - writing to 2021/preseason/week3/31-giants-browns.csv
+[INFO] : 03-09-2022 12:48:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:03 - new match
+[INFO] : 03-09-2022 12:48:03 - writing to 2021/preseason/week3/32-49ers-chargers.csv
+[INFO] : 03-09-2022 12:48:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:03 - Day 10: Monday, August 23, 2021
+[INFO] : 03-09-2022 12:48:03 - new match
+[INFO] : 03-09-2022 12:48:03 - writing to 2021/preseason/week3/33-jaguars-saints.csv
+[INFO] : 03-09-2022 12:48:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:11 - Day 11: Friday, August 27, 2021
+[INFO] : 03-09-2022 12:48:12 - new match
+[INFO] : 03-09-2022 12:48:12 - writing to 2021/preseason/week4/34-colts-lions.csv
+[INFO] : 03-09-2022 12:48:12 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:12 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:12 - new match
+[INFO] : 03-09-2022 12:48:12 - writing to 2021/preseason/week4/35-eagles-jets.csv
+[INFO] : 03-09-2022 12:48:12 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:12 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:12 - new match
+[INFO] : 03-09-2022 12:48:13 - writing to 2021/preseason/week4/36-steelers-panthers.csv
+[INFO] : 03-09-2022 12:48:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:13 - new match
+[INFO] : 03-09-2022 12:48:13 - writing to 2021/preseason/week4/37-vikings-chiefs.csv
+[INFO] : 03-09-2022 12:48:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:13 - Day 12: Saturday, August 28, 2021
+[INFO] : 03-09-2022 12:48:13 - new match
+[INFO] : 03-09-2022 12:48:13 - writing to 2021/preseason/week4/38-packers-bills.csv
+[INFO] : 03-09-2022 12:48:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:13 - new match
+[INFO] : 03-09-2022 12:48:13 - writing to 2021/preseason/week4/39-ravens-washington.csv
+[INFO] : 03-09-2022 12:48:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:13 - new match
+[INFO] : 03-09-2022 12:48:13 - writing to 2021/preseason/week4/40-bears-titans.csv
+[INFO] : 03-09-2022 12:48:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:13 - new match
+[INFO] : 03-09-2022 12:48:13 - writing to 2021/preseason/week4/41-buccaneers-texans.csv
+[INFO] : 03-09-2022 12:48:14 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:14 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:14 - new match
+[INFO] : 03-09-2022 12:48:15 - writing to 2021/preseason/week4/42-rams-broncos.csv
+[INFO] : 03-09-2022 12:48:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:16 - new match
+[INFO] : 03-09-2022 12:48:16 - writing to 2021/preseason/week4/43-chargers-seahawks.csv
+[INFO] : 03-09-2022 12:48:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:16 - new match
+[INFO] : 03-09-2022 12:48:16 - writing to 2021/preseason/week4/44-cardinals-saints.csv
+[INFO] : 03-09-2022 12:48:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:16 - Day 13: Sunday, August 29, 2021
+[INFO] : 03-09-2022 12:48:16 - new match
+[INFO] : 03-09-2022 12:48:16 - writing to 2021/preseason/week4/45-jaguars-cowboys.csv
+[INFO] : 03-09-2022 12:48:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:17 - new match
+[INFO] : 03-09-2022 12:48:17 - writing to 2021/preseason/week4/46-dolphins-bengals.csv
+[INFO] : 03-09-2022 12:48:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:17 - new match
+[INFO] : 03-09-2022 12:48:17 - writing to 2021/preseason/week4/47-raiders-49ers.csv
+[INFO] : 03-09-2022 12:48:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:17 - new match
+[INFO] : 03-09-2022 12:48:18 - writing to 2021/preseason/week4/48-patriots-giants.csv
+[INFO] : 03-09-2022 12:48:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:18 - new match
+[INFO] : 03-09-2022 12:48:18 - writing to 2021/preseason/week4/49-browns-falcons.csv
+[INFO] : 03-09-2022 12:48:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:48:18 - new season type
+[INFO] : 03-09-2022 12:50:46 - new season type
+[INFO] : 03-09-2022 12:51:11 - Day 1: Thursday, August 5, 2021
+[INFO] : 03-09-2022 12:51:25 - new match
+[INFO] : 03-09-2022 12:51:27 - writing to 2021/preseason/week1/01-cowboys-steelers.csv
+[INFO] : 03-09-2022 12:51:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:41 - Day 2: Thursday, August 12, 2021
+[INFO] : 03-09-2022 12:51:41 - new match
+[INFO] : 03-09-2022 12:51:41 - writing to 2021/preseason/week2/01-washington-patriots.csv
+[INFO] : 03-09-2022 12:51:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:41 - new match
+[INFO] : 03-09-2022 12:51:41 - writing to 2021/preseason/week2/02-steelers-eagles.csv
+[INFO] : 03-09-2022 12:51:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:41 - Day 3: Friday, August 13, 2021
+[INFO] : 03-09-2022 12:51:42 - new match
+[INFO] : 03-09-2022 12:51:44 - writing to 2021/preseason/week2/03-titans-falcons.csv
+[INFO] : 03-09-2022 12:51:46 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:46 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:46 - new match
+[INFO] : 03-09-2022 12:51:46 - writing to 2021/preseason/week2/04-bills-lions.csv
+[INFO] : 03-09-2022 12:51:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:47 - new match
+[INFO] : 03-09-2022 12:51:47 - writing to 2021/preseason/week2/05-cowboys-cardinals.csv
+[INFO] : 03-09-2022 12:51:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:47 - Day 4: Saturday, August 14, 2021
+[INFO] : 03-09-2022 12:51:47 - new match
+[INFO] : 03-09-2022 12:51:47 - writing to 2021/preseason/week2/06-dolphins-bears.csv
+[INFO] : 03-09-2022 12:51:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:47 - new match
+[INFO] : 03-09-2022 12:51:47 - writing to 2021/preseason/week2/07-broncos-vikings.csv
+[INFO] : 03-09-2022 12:51:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:47 - new match
+[INFO] : 03-09-2022 12:51:47 - writing to 2021/preseason/week2/08-browns-jaguars.csv
+[INFO] : 03-09-2022 12:51:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:48 - new match
+[INFO] : 03-09-2022 12:51:48 - writing to 2021/preseason/week2/09-saints-ravens.csv
+[INFO] : 03-09-2022 12:51:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:48 - new match
+[INFO] : 03-09-2022 12:51:48 - writing to 2021/preseason/week2/10-jets-giants.csv
+[INFO] : 03-09-2022 12:51:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:48 - new match
+[INFO] : 03-09-2022 12:51:48 - writing to 2021/preseason/week2/11-bengals-buccaneers.csv
+[INFO] : 03-09-2022 12:51:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:48 - new match
+[INFO] : 03-09-2022 12:51:48 - writing to 2021/preseason/week2/12-texans-packers.csv
+[INFO] : 03-09-2022 12:51:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:49 - new match
+[INFO] : 03-09-2022 12:51:49 - writing to 2021/preseason/week2/13-chiefs-49ers.csv
+[INFO] : 03-09-2022 12:51:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:49 - new match
+[INFO] : 03-09-2022 12:51:49 - writing to 2021/preseason/week2/14-seahawks-raiders.csv
+[INFO] : 03-09-2022 12:51:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:49 - new match
+[INFO] : 03-09-2022 12:51:49 - writing to 2021/preseason/week2/15-chargers-rams.csv
+[INFO] : 03-09-2022 12:51:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:49 - Day 5: Sunday, August 15, 2021
+[INFO] : 03-09-2022 12:51:49 - new match
+[INFO] : 03-09-2022 12:51:49 - writing to 2021/preseason/week2/16-panthers-colts.csv
+[INFO] : 03-09-2022 12:51:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:57 - Day 6: Thursday, August 19, 2021
+[INFO] : 03-09-2022 12:51:57 - new match
+[INFO] : 03-09-2022 12:51:57 - writing to 2021/preseason/week3/01-patriots-eagles.csv
+[INFO] : 03-09-2022 12:51:57 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:58 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:58 - Day 7: Friday, August 20, 2021
+[INFO] : 03-09-2022 12:51:58 - new match
+[INFO] : 03-09-2022 12:51:58 - writing to 2021/preseason/week3/02-chiefs-cardinals.csv
+[INFO] : 03-09-2022 12:51:58 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:58 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:58 - new match
+[INFO] : 03-09-2022 12:51:58 - writing to 2021/preseason/week3/03-bengals-washington.csv
+[INFO] : 03-09-2022 12:51:58 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:58 - quarter scores formatted
+[INFO] : 03-09-2022 12:51:58 - Day 8: Saturday, August 21, 2021
+[INFO] : 03-09-2022 12:51:58 - new match
+[INFO] : 03-09-2022 12:51:58 - writing to 2021/preseason/week3/04-bills-bears.csv
+[INFO] : 03-09-2022 12:51:58 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:02 - new match
+[INFO] : 03-09-2022 12:52:02 - writing to 2021/preseason/week3/05-jets-packers.csv
+[INFO] : 03-09-2022 12:52:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:02 - new match
+[INFO] : 03-09-2022 12:52:02 - writing to 2021/preseason/week3/06-falcons-dolphins.csv
+[INFO] : 03-09-2022 12:52:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:02 - new match
+[INFO] : 03-09-2022 12:52:03 - writing to 2021/preseason/week3/07-ravens-panthers.csv
+[INFO] : 03-09-2022 12:52:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:03 - new match
+[INFO] : 03-09-2022 12:52:03 - writing to 2021/preseason/week3/08-lions-steelers.csv
+[INFO] : 03-09-2022 12:52:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:03 - new match
+[INFO] : 03-09-2022 12:52:03 - writing to 2021/preseason/week3/09-titans-buccaneers.csv
+[INFO] : 03-09-2022 12:52:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:03 - new match
+[INFO] : 03-09-2022 12:52:03 - writing to 2021/preseason/week3/10-texans-cowboys.csv
+[INFO] : 03-09-2022 12:52:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:03 - new match
+[INFO] : 03-09-2022 12:52:03 - writing to 2021/preseason/week3/11-colts-vikings.csv
+[INFO] : 03-09-2022 12:52:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:04 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:04 - new match
+[INFO] : 03-09-2022 12:52:04 - writing to 2021/preseason/week3/12-raiders-rams.csv
+[INFO] : 03-09-2022 12:52:04 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:04 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:04 - new match
+[INFO] : 03-09-2022 12:52:04 - writing to 2021/preseason/week3/13-broncos-seahawks.csv
+[INFO] : 03-09-2022 12:52:04 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:04 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:04 - Day 9: Sunday, August 22, 2021
+[INFO] : 03-09-2022 12:52:04 - new match
+[INFO] : 03-09-2022 12:52:04 - writing to 2021/preseason/week3/14-giants-browns.csv
+[INFO] : 03-09-2022 12:52:04 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:04 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:04 - new match
+[INFO] : 03-09-2022 12:52:04 - writing to 2021/preseason/week3/15-49ers-chargers.csv
+[INFO] : 03-09-2022 12:52:05 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:05 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:05 - Day 10: Monday, August 23, 2021
+[INFO] : 03-09-2022 12:52:05 - new match
+[INFO] : 03-09-2022 12:52:05 - writing to 2021/preseason/week3/16-jaguars-saints.csv
+[INFO] : 03-09-2022 12:52:05 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:05 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:11 - Day 11: Friday, August 27, 2021
+[INFO] : 03-09-2022 12:52:11 - new match
+[INFO] : 03-09-2022 12:52:12 - writing to 2021/preseason/week4/01-colts-lions.csv
+[INFO] : 03-09-2022 12:52:12 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:12 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:12 - new match
+[INFO] : 03-09-2022 12:52:12 - writing to 2021/preseason/week4/02-eagles-jets.csv
+[INFO] : 03-09-2022 12:52:12 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:12 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:12 - new match
+[INFO] : 03-09-2022 12:52:12 - writing to 2021/preseason/week4/03-steelers-panthers.csv
+[INFO] : 03-09-2022 12:52:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:13 - new match
+[INFO] : 03-09-2022 12:52:13 - writing to 2021/preseason/week4/04-vikings-chiefs.csv
+[INFO] : 03-09-2022 12:52:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:13 - Day 12: Saturday, August 28, 2021
+[INFO] : 03-09-2022 12:52:13 - new match
+[INFO] : 03-09-2022 12:52:13 - writing to 2021/preseason/week4/05-packers-bills.csv
+[INFO] : 03-09-2022 12:52:13 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:17 - new match
+[INFO] : 03-09-2022 12:52:17 - writing to 2021/preseason/week4/06-ravens-washington.csv
+[INFO] : 03-09-2022 12:52:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:17 - new match
+[INFO] : 03-09-2022 12:52:17 - writing to 2021/preseason/week4/07-bears-titans.csv
+[INFO] : 03-09-2022 12:52:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:17 - new match
+[INFO] : 03-09-2022 12:52:18 - writing to 2021/preseason/week4/08-buccaneers-texans.csv
+[INFO] : 03-09-2022 12:52:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:18 - new match
+[INFO] : 03-09-2022 12:52:18 - writing to 2021/preseason/week4/09-rams-broncos.csv
+[INFO] : 03-09-2022 12:52:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:18 - new match
+[INFO] : 03-09-2022 12:52:18 - writing to 2021/preseason/week4/10-chargers-seahawks.csv
+[INFO] : 03-09-2022 12:52:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:18 - new match
+[INFO] : 03-09-2022 12:52:18 - writing to 2021/preseason/week4/11-cardinals-saints.csv
+[INFO] : 03-09-2022 12:52:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:18 - Day 13: Sunday, August 29, 2021
+[INFO] : 03-09-2022 12:52:18 - new match
+[INFO] : 03-09-2022 12:52:18 - writing to 2021/preseason/week4/12-jaguars-cowboys.csv
+[INFO] : 03-09-2022 12:52:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:18 - new match
+[INFO] : 03-09-2022 12:52:18 - writing to 2021/preseason/week4/13-dolphins-bengals.csv
+[INFO] : 03-09-2022 12:52:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:19 - new match
+[INFO] : 03-09-2022 12:52:19 - writing to 2021/preseason/week4/14-raiders-49ers.csv
+[INFO] : 03-09-2022 12:52:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:19 - new match
+[INFO] : 03-09-2022 12:52:19 - writing to 2021/preseason/week4/15-patriots-giants.csv
+[INFO] : 03-09-2022 12:52:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:19 - new match
+[INFO] : 03-09-2022 12:52:19 - writing to 2021/preseason/week4/16-browns-falcons.csv
+[INFO] : 03-09-2022 12:52:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:19 - new season type
+[INFO] : 03-09-2022 12:52:25 - Day 14: Thursday, September 9, 2021
+[INFO] : 03-09-2022 12:52:26 - new match
+[INFO] : 03-09-2022 12:52:26 - writing to 2021/regular/week1/01-cowboys-buccaneers.csv
+[INFO] : 03-09-2022 12:52:26 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:26 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:26 - Day 15: Sunday, September 12, 2021
+[INFO] : 03-09-2022 12:52:26 - new match
+[INFO] : 03-09-2022 12:52:26 - writing to 2021/regular/week1/02-eagles-falcons.csv
+[INFO] : 03-09-2022 12:52:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:27 - new match
+[INFO] : 03-09-2022 12:52:27 - writing to 2021/regular/week1/03-steelers-bills.csv
+[INFO] : 03-09-2022 12:52:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:27 - new match
+[INFO] : 03-09-2022 12:52:27 - writing to 2021/regular/week1/04-vikings-bengals.csv
+[INFO] : 03-09-2022 12:52:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:28 - new match
+[INFO] : 03-09-2022 12:52:28 - writing to 2021/regular/week1/05-49ers-lions.csv
+[INFO] : 03-09-2022 12:52:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:28 - new match
+[INFO] : 03-09-2022 12:52:28 - writing to 2021/regular/week1/06-cardinals-titans.csv
+[INFO] : 03-09-2022 12:52:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:28 - new match
+[INFO] : 03-09-2022 12:52:28 - writing to 2021/regular/week1/07-seahawks-colts.csv
+[INFO] : 03-09-2022 12:52:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:32 - new match
+[INFO] : 03-09-2022 12:52:32 - writing to 2021/regular/week1/08-chargers-washington.csv
+[INFO] : 03-09-2022 12:52:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:32 - new match
+[INFO] : 03-09-2022 12:52:32 - writing to 2021/regular/week1/09-jets-panthers.csv
+[INFO] : 03-09-2022 12:52:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:32 - new match
+[INFO] : 03-09-2022 12:52:32 - writing to 2021/regular/week1/10-jaguars-texans.csv
+[INFO] : 03-09-2022 12:52:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:32 - new match
+[INFO] : 03-09-2022 12:52:32 - writing to 2021/regular/week1/11-browns-chiefs.csv
+[INFO] : 03-09-2022 12:52:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:32 - new match
+[INFO] : 03-09-2022 12:52:32 - writing to 2021/regular/week1/12-dolphins-patriots.csv
+[INFO] : 03-09-2022 12:52:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:33 - new match
+[INFO] : 03-09-2022 12:52:33 - writing to 2021/regular/week1/13-packers-saints.csv
+[INFO] : 03-09-2022 12:52:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:33 - new match
+[INFO] : 03-09-2022 12:52:33 - writing to 2021/regular/week1/14-broncos-giants.csv
+[INFO] : 03-09-2022 12:52:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:33 - new match
+[INFO] : 03-09-2022 12:52:33 - writing to 2021/regular/week1/15-bears-rams.csv
+[INFO] : 03-09-2022 12:52:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:33 - Day 16: Monday, September 13, 2021
+[INFO] : 03-09-2022 12:52:33 - new match
+[INFO] : 03-09-2022 12:52:33 - writing to 2021/regular/week1/16-ravens-raiders.csv
+[INFO] : 03-09-2022 12:52:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:40 - Day 17: Thursday, September 16, 2021
+[INFO] : 03-09-2022 12:52:40 - new match
+[INFO] : 03-09-2022 12:52:41 - writing to 2021/regular/week2/01-giants-washington.csv
+[INFO] : 03-09-2022 12:52:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:41 - Day 18: Sunday, September 19, 2021
+[INFO] : 03-09-2022 12:52:41 - new match
+[INFO] : 03-09-2022 12:52:41 - writing to 2021/regular/week2/02-bengals-bears.csv
+[INFO] : 03-09-2022 12:52:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:41 - new match
+[INFO] : 03-09-2022 12:52:41 - writing to 2021/regular/week2/03-texans-browns.csv
+[INFO] : 03-09-2022 12:52:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:42 - new match
+[INFO] : 03-09-2022 12:52:42 - writing to 2021/regular/week2/04-rams-colts.csv
+[INFO] : 03-09-2022 12:52:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:42 - new match
+[INFO] : 03-09-2022 12:52:42 - writing to 2021/regular/week2/05-bills-dolphins.csv
+[INFO] : 03-09-2022 12:52:43 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:46 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:46 - new match
+[INFO] : 03-09-2022 12:52:46 - writing to 2021/regular/week2/06-patriots-jets.csv
+[INFO] : 03-09-2022 12:52:46 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:46 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:46 - new match
+[INFO] : 03-09-2022 12:52:46 - writing to 2021/regular/week2/07-49ers-eagles.csv
+[INFO] : 03-09-2022 12:52:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:47 - new match
+[INFO] : 03-09-2022 12:52:47 - writing to 2021/regular/week2/08-raiders-steelers.csv
+[INFO] : 03-09-2022 12:52:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:47 - new match
+[INFO] : 03-09-2022 12:52:47 - writing to 2021/regular/week2/09-saints-panthers.csv
+[INFO] : 03-09-2022 12:52:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:47 - new match
+[INFO] : 03-09-2022 12:52:47 - writing to 2021/regular/week2/10-broncos-jaguars.csv
+[INFO] : 03-09-2022 12:52:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:47 - new match
+[INFO] : 03-09-2022 12:52:47 - writing to 2021/regular/week2/11-vikings-cardinals.csv
+[INFO] : 03-09-2022 12:52:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:48 - new match
+[INFO] : 03-09-2022 12:52:48 - writing to 2021/regular/week2/12-falcons-buccaneers.csv
+[INFO] : 03-09-2022 12:52:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:48 - new match
+[INFO] : 03-09-2022 12:52:48 - writing to 2021/regular/week2/13-cowboys-chargers.csv
+[INFO] : 03-09-2022 12:52:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:48 - new match
+[INFO] : 03-09-2022 12:52:48 - writing to 2021/regular/week2/14-titans-seahawks.csv
+[INFO] : 03-09-2022 12:52:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:48 - new match
+[INFO] : 03-09-2022 12:52:48 - writing to 2021/regular/week2/15-chiefs-ravens.csv
+[INFO] : 03-09-2022 12:52:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:48 - Day 19: Monday, September 20, 2021
+[INFO] : 03-09-2022 12:52:48 - new match
+[INFO] : 03-09-2022 12:52:48 - writing to 2021/regular/week2/16-lions-packers.csv
+[INFO] : 03-09-2022 12:52:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:54 - Day 20: Thursday, September 23, 2021
+[INFO] : 03-09-2022 12:52:55 - new match
+[INFO] : 03-09-2022 12:52:56 - writing to 2021/regular/week3/01-panthers-texans.csv
+[INFO] : 03-09-2022 12:52:56 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:56 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:57 - Day 21: Sunday, September 26, 2021
+[INFO] : 03-09-2022 12:52:57 - new match
+[INFO] : 03-09-2022 12:52:57 - writing to 2021/regular/week3/02-washington-bills.csv
+[INFO] : 03-09-2022 12:52:57 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:57 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:57 - new match
+[INFO] : 03-09-2022 12:52:57 - writing to 2021/regular/week3/03-bears-browns.csv
+[INFO] : 03-09-2022 12:52:57 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:57 - quarter scores formatted
+[INFO] : 03-09-2022 12:52:57 - new match
+[INFO] : 03-09-2022 12:53:00 - writing to 2021/regular/week3/04-ravens-lions.csv
+[INFO] : 03-09-2022 12:53:00 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:01 - new match
+[INFO] : 03-09-2022 12:53:01 - writing to 2021/regular/week3/05-colts-titans.csv
+[INFO] : 03-09-2022 12:53:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:01 - new match
+[INFO] : 03-09-2022 12:53:01 - writing to 2021/regular/week3/06-chargers-chiefs.csv
+[INFO] : 03-09-2022 12:53:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:01 - new match
+[INFO] : 03-09-2022 12:53:01 - writing to 2021/regular/week3/07-saints-patriots.csv
+[INFO] : 03-09-2022 12:53:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:01 - new match
+[INFO] : 03-09-2022 12:53:01 - writing to 2021/regular/week3/08-falcons-giants.csv
+[INFO] : 03-09-2022 12:53:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:01 - new match
+[INFO] : 03-09-2022 12:53:01 - writing to 2021/regular/week3/09-bengals-steelers.csv
+[INFO] : 03-09-2022 12:53:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:02 - new match
+[INFO] : 03-09-2022 12:53:02 - writing to 2021/regular/week3/10-cardinals-jaguars.csv
+[INFO] : 03-09-2022 12:53:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:02 - new match
+[INFO] : 03-09-2022 12:53:02 - writing to 2021/regular/week3/11-jets-broncos.csv
+[INFO] : 03-09-2022 12:53:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:02 - new match
+[INFO] : 03-09-2022 12:53:02 - writing to 2021/regular/week3/12-dolphins-raiders.csv
+[INFO] : 03-09-2022 12:53:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:02 - new match
+[INFO] : 03-09-2022 12:53:02 - writing to 2021/regular/week3/13-buccaneers-rams.csv
+[INFO] : 03-09-2022 12:53:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:03 - new match
+[INFO] : 03-09-2022 12:53:03 - writing to 2021/regular/week3/14-seahawks-vikings.csv
+[INFO] : 03-09-2022 12:53:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:03 - new match
+[INFO] : 03-09-2022 12:53:03 - writing to 2021/regular/week3/15-packers-49ers.csv
+[INFO] : 03-09-2022 12:53:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:03 - Day 22: Monday, September 27, 2021
+[INFO] : 03-09-2022 12:53:03 - new match
+[INFO] : 03-09-2022 12:53:03 - writing to 2021/regular/week3/16-eagles-cowboys.csv
+[INFO] : 03-09-2022 12:53:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:09 - Day 23: Thursday, September 30, 2021
+[INFO] : 03-09-2022 12:53:10 - new match
+[INFO] : 03-09-2022 12:53:10 - writing to 2021/regular/week4/01-jaguars-bengals.csv
+[INFO] : 03-09-2022 12:53:10 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:10 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:10 - Day 24: Sunday, October 3, 2021
+[INFO] : 03-09-2022 12:53:10 - new match
+[INFO] : 03-09-2022 12:53:10 - writing to 2021/regular/week4/02-washington-falcons.csv
+[INFO] : 03-09-2022 12:53:10 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:10 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:10 - new match
+[INFO] : 03-09-2022 12:53:11 - writing to 2021/regular/week4/03-texans-bills.csv
+[INFO] : 03-09-2022 12:53:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:11 - new match
+[INFO] : 03-09-2022 12:53:11 - writing to 2021/regular/week4/04-lions-bears.csv
+[INFO] : 03-09-2022 12:53:15 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:15 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:15 - new match
+[INFO] : 03-09-2022 12:53:15 - writing to 2021/regular/week4/05-panthers-cowboys.csv
+[INFO] : 03-09-2022 12:53:15 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:16 - new match
+[INFO] : 03-09-2022 12:53:16 - writing to 2021/regular/week4/06-colts-dolphins.csv
+[INFO] : 03-09-2022 12:53:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:16 - new match
+[INFO] : 03-09-2022 12:53:16 - writing to 2021/regular/week4/07-browns-vikings.csv
+[INFO] : 03-09-2022 12:53:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:16 - new match
+[INFO] : 03-09-2022 12:53:16 - writing to 2021/regular/week4/08-giants-saints.csv
+[INFO] : 03-09-2022 12:53:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:16 - new match
+[INFO] : 03-09-2022 12:53:16 - writing to 2021/regular/week4/09-titans-jets.csv
+[INFO] : 03-09-2022 12:53:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:16 - new match
+[INFO] : 03-09-2022 12:53:17 - writing to 2021/regular/week4/10-chiefs-eagles.csv
+[INFO] : 03-09-2022 12:53:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:17 - new match
+[INFO] : 03-09-2022 12:53:17 - writing to 2021/regular/week4/11-cardinals-rams.csv
+[INFO] : 03-09-2022 12:53:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:17 - new match
+[INFO] : 03-09-2022 12:53:17 - writing to 2021/regular/week4/12-seahawks-49ers.csv
+[INFO] : 03-09-2022 12:53:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:17 - new match
+[INFO] : 03-09-2022 12:53:17 - writing to 2021/regular/week4/13-ravens-broncos.csv
+[INFO] : 03-09-2022 12:53:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:17 - new match
+[INFO] : 03-09-2022 12:53:17 - writing to 2021/regular/week4/14-steelers-packers.csv
+[INFO] : 03-09-2022 12:53:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:18 - new match
+[INFO] : 03-09-2022 12:53:18 - writing to 2021/regular/week4/15-buccaneers-patriots.csv
+[INFO] : 03-09-2022 12:53:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:18 - Day 25: Monday, October 4, 2021
+[INFO] : 03-09-2022 12:53:18 - new match
+[INFO] : 03-09-2022 12:53:18 - writing to 2021/regular/week4/16-raiders-chargers.csv
+[INFO] : 03-09-2022 12:53:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:25 - Day 26: Thursday, October 7, 2021
+[INFO] : 03-09-2022 12:53:25 - new match
+[INFO] : 03-09-2022 12:53:27 - writing to 2021/regular/week5/01-rams-seahawks.csv
+[INFO] : 03-09-2022 12:53:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:27 - Day 27: Sunday, October 10, 2021
+[INFO] : 03-09-2022 12:53:27 - new match
+[INFO] : 03-09-2022 12:53:27 - writing to 2021/regular/week5/02-jets-falcons.csv
+[INFO] : 03-09-2022 12:53:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:27 - new match
+[INFO] : 03-09-2022 12:53:27 - writing to 2021/regular/week5/03-packers-bengals.csv
+[INFO] : 03-09-2022 12:53:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:28 - new match
+[INFO] : 03-09-2022 12:53:33 - writing to 2021/regular/week5/04-lions-vikings.csv
+[INFO] : 03-09-2022 12:53:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:33 - new match
+[INFO] : 03-09-2022 12:53:33 - writing to 2021/regular/week5/05-broncos-steelers.csv
+[INFO] : 03-09-2022 12:53:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:33 - new match
+[INFO] : 03-09-2022 12:53:33 - writing to 2021/regular/week5/06-dolphins-buccaneers.csv
+[INFO] : 03-09-2022 12:53:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:33 - new match
+[INFO] : 03-09-2022 12:53:33 - writing to 2021/regular/week5/07-saints-washington.csv
+[INFO] : 03-09-2022 12:53:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:33 - new match
+[INFO] : 03-09-2022 12:53:33 - writing to 2021/regular/week5/08-eagles-panthers.csv
+[INFO] : 03-09-2022 12:53:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:34 - new match
+[INFO] : 03-09-2022 12:53:34 - writing to 2021/regular/week5/09-titans-jaguars.csv
+[INFO] : 03-09-2022 12:53:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:34 - new match
+[INFO] : 03-09-2022 12:53:34 - writing to 2021/regular/week5/10-patriots-texans.csv
+[INFO] : 03-09-2022 12:53:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:34 - new match
+[INFO] : 03-09-2022 12:53:34 - writing to 2021/regular/week5/11-bears-raiders.csv
+[INFO] : 03-09-2022 12:53:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:34 - new match
+[INFO] : 03-09-2022 12:53:34 - writing to 2021/regular/week5/12-browns-chargers.csv
+[INFO] : 03-09-2022 12:53:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:34 - new match
+[INFO] : 03-09-2022 12:53:35 - writing to 2021/regular/week5/13-giants-cowboys.csv
+[INFO] : 03-09-2022 12:53:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:35 - new match
+[INFO] : 03-09-2022 12:53:35 - writing to 2021/regular/week5/14-49ers-cardinals.csv
+[INFO] : 03-09-2022 12:53:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:35 - new match
+[INFO] : 03-09-2022 12:53:35 - writing to 2021/regular/week5/15-bills-chiefs.csv
+[INFO] : 03-09-2022 12:53:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:35 - Day 28: Monday, October 11, 2021
+[INFO] : 03-09-2022 12:53:35 - new match
+[INFO] : 03-09-2022 12:53:35 - writing to 2021/regular/week5/16-colts-ravens.csv
+[INFO] : 03-09-2022 12:53:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:42 - Day 29: Thursday, October 14, 2021
+[INFO] : 03-09-2022 12:53:42 - new match
+[INFO] : 03-09-2022 12:53:43 - writing to 2021/regular/week6/01-buccaneers-eagles.csv
+[INFO] : 03-09-2022 12:53:43 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:43 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:44 - Day 30: Sunday, October 17, 2021
+[INFO] : 03-09-2022 12:53:44 - new match
+[INFO] : 03-09-2022 12:53:44 - writing to 2021/regular/week6/02-dolphins-jaguars.csv
+[INFO] : 03-09-2022 12:53:44 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:44 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:44 - new match
+[INFO] : 03-09-2022 12:53:44 - writing to 2021/regular/week6/03-packers-bears.csv
+[INFO] : 03-09-2022 12:53:44 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:44 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:44 - new match
+[INFO] : 03-09-2022 12:53:44 - writing to 2021/regular/week6/04-bengals-lions.csv
+[INFO] : 03-09-2022 12:53:44 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:47 - new match
+[INFO] : 03-09-2022 12:53:47 - writing to 2021/regular/week6/05-texans-colts.csv
+[INFO] : 03-09-2022 12:53:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:47 - new match
+[INFO] : 03-09-2022 12:53:47 - writing to 2021/regular/week6/06-rams-giants.csv
+[INFO] : 03-09-2022 12:53:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:48 - new match
+[INFO] : 03-09-2022 12:53:48 - writing to 2021/regular/week6/07-chiefs-washington.csv
+[INFO] : 03-09-2022 12:53:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:48 - new match
+[INFO] : 03-09-2022 12:53:48 - writing to 2021/regular/week6/08-vikings-panthers.csv
+[INFO] : 03-09-2022 12:53:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:48 - new match
+[INFO] : 03-09-2022 12:53:48 - writing to 2021/regular/week6/09-chargers-ravens.csv
+[INFO] : 03-09-2022 12:53:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:48 - new match
+[INFO] : 03-09-2022 12:53:48 - writing to 2021/regular/week6/10-cardinals-browns.csv
+[INFO] : 03-09-2022 12:53:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:48 - new match
+[INFO] : 03-09-2022 12:53:49 - writing to 2021/regular/week6/11-raiders-broncos.csv
+[INFO] : 03-09-2022 12:53:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:49 - new match
+[INFO] : 03-09-2022 12:53:49 - writing to 2021/regular/week6/12-cowboys-patriots.csv
+[INFO] : 03-09-2022 12:53:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:49 - new match
+[INFO] : 03-09-2022 12:53:49 - writing to 2021/regular/week6/13-seahawks-steelers.csv
+[INFO] : 03-09-2022 12:53:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:49 - Day 31: Monday, October 18, 2021
+[INFO] : 03-09-2022 12:53:49 - new match
+[INFO] : 03-09-2022 12:53:49 - writing to 2021/regular/week6/14-bills-titans.csv
+[INFO] : 03-09-2022 12:53:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:55 - Day 32: Thursday, October 21, 2021
+[INFO] : 03-09-2022 12:53:55 - new match
+[INFO] : 03-09-2022 12:53:56 - writing to 2021/regular/week7/01-broncos-browns.csv
+[INFO] : 03-09-2022 12:53:56 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:56 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:56 - Day 33: Sunday, October 24, 2021
+[INFO] : 03-09-2022 12:53:56 - new match
+[INFO] : 03-09-2022 12:53:56 - writing to 2021/regular/week7/02-washington-packers.csv
+[INFO] : 03-09-2022 12:53:56 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:57 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:57 - new match
+[INFO] : 03-09-2022 12:53:57 - writing to 2021/regular/week7/03-chiefs-titans.csv
+[INFO] : 03-09-2022 12:53:57 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:57 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:57 - new match
+[INFO] : 03-09-2022 12:53:57 - writing to 2021/regular/week7/04-falcons-dolphins.csv
+[INFO] : 03-09-2022 12:53:57 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:57 - quarter scores formatted
+[INFO] : 03-09-2022 12:53:57 - new match
+[INFO] : 03-09-2022 12:53:57 - writing to 2021/regular/week7/05-jets-patriots.csv
+[INFO] : 03-09-2022 12:53:57 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:02 - new match
+[INFO] : 03-09-2022 12:54:02 - writing to 2021/regular/week7/06-panthers-giants.csv
+[INFO] : 03-09-2022 12:54:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:02 - new match
+[INFO] : 03-09-2022 12:54:02 - writing to 2021/regular/week7/07-bengals-ravens.csv
+[INFO] : 03-09-2022 12:54:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:03 - new match
+[INFO] : 03-09-2022 12:54:03 - writing to 2021/regular/week7/08-eagles-raiders.csv
+[INFO] : 03-09-2022 12:54:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:03 - new match
+[INFO] : 03-09-2022 12:54:03 - writing to 2021/regular/week7/09-lions-rams.csv
+[INFO] : 03-09-2022 12:54:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:03 - new match
+[INFO] : 03-09-2022 12:54:03 - writing to 2021/regular/week7/10-texans-cardinals.csv
+[INFO] : 03-09-2022 12:54:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:03 - new match
+[INFO] : 03-09-2022 12:54:03 - writing to 2021/regular/week7/11-bears-buccaneers.csv
+[INFO] : 03-09-2022 12:54:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:03 - new match
+[INFO] : 03-09-2022 12:54:03 - writing to 2021/regular/week7/12-colts-49ers.csv
+[INFO] : 03-09-2022 12:54:04 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:04 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:04 - Day 34: Monday, October 25, 2021
+[INFO] : 03-09-2022 12:54:04 - new match
+[INFO] : 03-09-2022 12:54:04 - writing to 2021/regular/week7/13-saints-seahawks.csv
+[INFO] : 03-09-2022 12:54:04 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:04 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:10 - Day 35: Thursday, October 28, 2021
+[INFO] : 03-09-2022 12:54:10 - new match
+[INFO] : 03-09-2022 12:54:11 - writing to 2021/regular/week8/01-packers-cardinals.csv
+[INFO] : 03-09-2022 12:54:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:11 - Day 36: Sunday, October 31, 2021
+[INFO] : 03-09-2022 12:54:11 - new match
+[INFO] : 03-09-2022 12:54:11 - writing to 2021/regular/week8/02-panthers-falcons.csv
+[INFO] : 03-09-2022 12:54:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:11 - new match
+[INFO] : 03-09-2022 12:54:11 - writing to 2021/regular/week8/03-dolphins-bills.csv
+[INFO] : 03-09-2022 12:54:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:11 - new match
+[INFO] : 03-09-2022 12:54:12 - writing to 2021/regular/week8/04-49ers-bears.csv
+[INFO] : 03-09-2022 12:54:14 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:14 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:14 - new match
+[INFO] : 03-09-2022 12:54:14 - writing to 2021/regular/week8/05-steelers-browns.csv
+[INFO] : 03-09-2022 12:54:14 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:14 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:14 - new match
+[INFO] : 03-09-2022 12:54:14 - writing to 2021/regular/week8/06-eagles-lions.csv
+[INFO] : 03-09-2022 12:54:14 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:15 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:15 - new match
+[INFO] : 03-09-2022 12:54:15 - writing to 2021/regular/week8/07-titans-colts.csv
+[INFO] : 03-09-2022 12:54:15 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:15 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:15 - new match
+[INFO] : 03-09-2022 12:54:15 - writing to 2021/regular/week8/08-bengals-jets.csv
+[INFO] : 03-09-2022 12:54:15 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:15 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:15 - new match
+[INFO] : 03-09-2022 12:54:16 - writing to 2021/regular/week8/09-rams-texans.csv
+[INFO] : 03-09-2022 12:54:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:16 - new match
+[INFO] : 03-09-2022 12:54:16 - writing to 2021/regular/week8/10-patriots-chargers.csv
+[INFO] : 03-09-2022 12:54:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:16 - new match
+[INFO] : 03-09-2022 12:54:16 - writing to 2021/regular/week8/11-jaguars-seahawks.csv
+[INFO] : 03-09-2022 12:54:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:16 - new match
+[INFO] : 03-09-2022 12:54:16 - writing to 2021/regular/week8/12-washington-broncos.csv
+[INFO] : 03-09-2022 12:54:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:16 - new match
+[INFO] : 03-09-2022 12:54:16 - writing to 2021/regular/week8/13-buccaneers-saints.csv
+[INFO] : 03-09-2022 12:54:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:17 - new match
+[INFO] : 03-09-2022 12:54:17 - writing to 2021/regular/week8/14-cowboys-vikings.csv
+[INFO] : 03-09-2022 12:54:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:17 - Day 37: Monday, November 1, 2021
+[INFO] : 03-09-2022 12:54:17 - new match
+[INFO] : 03-09-2022 12:54:17 - writing to 2021/regular/week8/15-giants-chiefs.csv
+[INFO] : 03-09-2022 12:54:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:23 - Day 38: Thursday, November 4, 2021
+[INFO] : 03-09-2022 12:54:23 - new match
+[INFO] : 03-09-2022 12:54:24 - writing to 2021/regular/week9/01-jets-colts.csv
+[INFO] : 03-09-2022 12:54:24 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:25 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:25 - Day 39: Sunday, November 7, 2021
+[INFO] : 03-09-2022 12:54:25 - new match
+[INFO] : 03-09-2022 12:54:25 - writing to 2021/regular/week9/02-browns-bengals.csv
+[INFO] : 03-09-2022 12:54:25 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:25 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:25 - new match
+[INFO] : 03-09-2022 12:54:25 - writing to 2021/regular/week9/03-broncos-cowboys.csv
+[INFO] : 03-09-2022 12:54:25 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:28 - new match
+[INFO] : 03-09-2022 12:54:28 - writing to 2021/regular/week9/04-texans-dolphins.csv
+[INFO] : 03-09-2022 12:54:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:28 - new match
+[INFO] : 03-09-2022 12:54:28 - writing to 2021/regular/week9/05-falcons-saints.csv
+[INFO] : 03-09-2022 12:54:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:28 - new match
+[INFO] : 03-09-2022 12:54:28 - writing to 2021/regular/week9/06-raiders-giants.csv
+[INFO] : 03-09-2022 12:54:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:28 - new match
+[INFO] : 03-09-2022 12:54:28 - writing to 2021/regular/week9/07-patriots-panthers.csv
+[INFO] : 03-09-2022 12:54:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:28 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:28 - new match
+[INFO] : 03-09-2022 12:54:29 - writing to 2021/regular/week9/08-bills-jaguars.csv
+[INFO] : 03-09-2022 12:54:29 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:29 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:29 - new match
+[INFO] : 03-09-2022 12:54:29 - writing to 2021/regular/week9/09-vikings-ravens.csv
+[INFO] : 03-09-2022 12:54:29 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:29 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:29 - new match
+[INFO] : 03-09-2022 12:54:30 - writing to 2021/regular/week9/10-chargers-eagles.csv
+[INFO] : 03-09-2022 12:54:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:30 - new match
+[INFO] : 03-09-2022 12:54:30 - writing to 2021/regular/week9/11-packers-chiefs.csv
+[INFO] : 03-09-2022 12:54:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:30 - new match
+[INFO] : 03-09-2022 12:54:30 - writing to 2021/regular/week9/12-cardinals-49ers.csv
+[INFO] : 03-09-2022 12:54:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:30 - new match
+[INFO] : 03-09-2022 12:54:30 - writing to 2021/regular/week9/13-titans-rams.csv
+[INFO] : 03-09-2022 12:54:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:30 - Day 40: Monday, November 8, 2021
+[INFO] : 03-09-2022 12:54:30 - new match
+[INFO] : 03-09-2022 12:54:30 - writing to 2021/regular/week9/14-bears-steelers.csv
+[INFO] : 03-09-2022 12:54:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:36 - Day 41: Thursday, November 11, 2021
+[INFO] : 03-09-2022 12:54:36 - new match
+[INFO] : 03-09-2022 12:54:37 - writing to 2021/regular/week10/01-ravens-dolphins.csv
+[INFO] : 03-09-2022 12:54:37 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:37 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:37 - Day 42: Sunday, November 14, 2021
+[INFO] : 03-09-2022 12:54:37 - new match
+[INFO] : 03-09-2022 12:54:37 - writing to 2021/regular/week10/02-falcons-cowboys.csv
+[INFO] : 03-09-2022 12:54:37 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:38 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:38 - new match
+[INFO] : 03-09-2022 12:54:38 - writing to 2021/regular/week10/03-saints-titans.csv
+[INFO] : 03-09-2022 12:54:38 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:38 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:38 - new match
+[INFO] : 03-09-2022 12:54:38 - writing to 2021/regular/week10/04-jaguars-colts.csv
+[INFO] : 03-09-2022 12:54:38 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:38 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:38 - new match
+[INFO] : 03-09-2022 12:54:38 - writing to 2021/regular/week10/05-browns-patriots.csv
+[INFO] : 03-09-2022 12:54:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:41 - new match
+[INFO] : 03-09-2022 12:54:41 - writing to 2021/regular/week10/06-bills-jets.csv
+[INFO] : 03-09-2022 12:54:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:41 - new match
+[INFO] : 03-09-2022 12:54:41 - writing to 2021/regular/week10/07-lions-steelers.csv
+[INFO] : 03-09-2022 12:54:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:41 - new match
+[INFO] : 03-09-2022 12:54:41 - writing to 2021/regular/week10/08-buccaneers-washington.csv
+[INFO] : 03-09-2022 12:54:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:41 - new match
+[INFO] : 03-09-2022 12:54:41 - writing to 2021/regular/week10/09-panthers-cardinals.csv
+[INFO] : 03-09-2022 12:54:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:42 - new match
+[INFO] : 03-09-2022 12:54:42 - writing to 2021/regular/week10/10-vikings-chargers.csv
+[INFO] : 03-09-2022 12:54:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:42 - new match
+[INFO] : 03-09-2022 12:54:42 - writing to 2021/regular/week10/11-eagles-broncos.csv
+[INFO] : 03-09-2022 12:54:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:43 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:43 - new match
+[INFO] : 03-09-2022 12:54:43 - writing to 2021/regular/week10/12-seahawks-packers.csv
+[INFO] : 03-09-2022 12:54:43 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:43 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:43 - new match
+[INFO] : 03-09-2022 12:54:43 - writing to 2021/regular/week10/13-chiefs-raiders.csv
+[INFO] : 03-09-2022 12:54:43 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:43 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:43 - Day 43: Monday, November 15, 2021
+[INFO] : 03-09-2022 12:54:43 - new match
+[INFO] : 03-09-2022 12:54:43 - writing to 2021/regular/week10/14-rams-49ers.csv
+[INFO] : 03-09-2022 12:54:43 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:43 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:48 - Day 44: Thursday, November 18, 2021
+[INFO] : 03-09-2022 12:54:48 - new match
+[INFO] : 03-09-2022 12:54:49 - writing to 2021/regular/week11/01-patriots-falcons.csv
+[INFO] : 03-09-2022 12:54:49 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:50 - Day 45: Sunday, November 21, 2021
+[INFO] : 03-09-2022 12:54:50 - new match
+[INFO] : 03-09-2022 12:54:50 - writing to 2021/regular/week11/02-colts-bills.csv
+[INFO] : 03-09-2022 12:54:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:50 - new match
+[INFO] : 03-09-2022 12:54:50 - writing to 2021/regular/week11/03-ravens-bears.csv
+[INFO] : 03-09-2022 12:54:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:50 - new match
+[INFO] : 03-09-2022 12:54:50 - writing to 2021/regular/week11/04-lions-browns.csv
+[INFO] : 03-09-2022 12:54:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:50 - new match
+[INFO] : 03-09-2022 12:54:50 - writing to 2021/regular/week11/05-texans-titans.csv
+[INFO] : 03-09-2022 12:54:50 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:53 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:53 - new match
+[INFO] : 03-09-2022 12:54:53 - writing to 2021/regular/week11/06-packers-vikings.csv
+[INFO] : 03-09-2022 12:54:53 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:53 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:53 - new match
+[INFO] : 03-09-2022 12:54:53 - writing to 2021/regular/week11/07-dolphins-jets.csv
+[INFO] : 03-09-2022 12:54:53 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:53 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:53 - new match
+[INFO] : 03-09-2022 12:54:53 - writing to 2021/regular/week11/08-saints-eagles.csv
+[INFO] : 03-09-2022 12:54:53 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:53 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:53 - new match
+[INFO] : 03-09-2022 12:54:53 - writing to 2021/regular/week11/09-washington-panthers.csv
+[INFO] : 03-09-2022 12:54:53 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:53 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:53 - new match
+[INFO] : 03-09-2022 12:54:53 - writing to 2021/regular/week11/10-49ers-jaguars.csv
+[INFO] : 03-09-2022 12:54:53 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:54 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:54 - new match
+[INFO] : 03-09-2022 12:54:54 - writing to 2021/regular/week11/11-bengals-raiders.csv
+[INFO] : 03-09-2022 12:54:54 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:54 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:54 - new match
+[INFO] : 03-09-2022 12:54:54 - writing to 2021/regular/week11/12-cowboys-chiefs.csv
+[INFO] : 03-09-2022 12:54:54 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:54 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:54 - new match
+[INFO] : 03-09-2022 12:54:55 - writing to 2021/regular/week11/13-cardinals-seahawks.csv
+[INFO] : 03-09-2022 12:54:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:55 - new match
+[INFO] : 03-09-2022 12:54:55 - writing to 2021/regular/week11/14-steelers-chargers.csv
+[INFO] : 03-09-2022 12:54:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:55 - Day 46: Monday, November 22, 2021
+[INFO] : 03-09-2022 12:54:55 - new match
+[INFO] : 03-09-2022 12:54:55 - writing to 2021/regular/week11/15-giants-buccaneers.csv
+[INFO] : 03-09-2022 12:54:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:54:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:00 - Day 47: Thursday, November 25, 2021
+[INFO] : 03-09-2022 12:55:00 - new match
+[INFO] : 03-09-2022 12:55:01 - writing to 2021/regular/week12/01-bears-lions.csv
+[INFO] : 03-09-2022 12:55:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:02 - new match
+[INFO] : 03-09-2022 12:55:02 - writing to 2021/regular/week12/02-raiders-cowboys.csv
+[INFO] : 03-09-2022 12:55:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:02 - new match
+[INFO] : 03-09-2022 12:55:02 - writing to 2021/regular/week12/03-bills-saints.csv
+[INFO] : 03-09-2022 12:55:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:03 - Day 48: Sunday, November 28, 2021
+[INFO] : 03-09-2022 12:55:03 - new match
+[INFO] : 03-09-2022 12:55:03 - writing to 2021/regular/week12/04-steelers-bengals.csv
+[INFO] : 03-09-2022 12:55:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:03 - new match
+[INFO] : 03-09-2022 12:55:03 - writing to 2021/regular/week12/05-buccaneers-colts.csv
+[INFO] : 03-09-2022 12:55:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:03 - new match
+[INFO] : 03-09-2022 12:55:03 - writing to 2021/regular/week12/06-panthers-dolphins.csv
+[INFO] : 03-09-2022 12:55:05 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:05 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:05 - new match
+[INFO] : 03-09-2022 12:55:05 - writing to 2021/regular/week12/07-titans-patriots.csv
+[INFO] : 03-09-2022 12:55:05 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:05 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:05 - new match
+[INFO] : 03-09-2022 12:55:05 - writing to 2021/regular/week12/08-eagles-giants.csv
+[INFO] : 03-09-2022 12:55:05 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:05 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:05 - new match
+[INFO] : 03-09-2022 12:55:05 - writing to 2021/regular/week12/09-falcons-jaguars.csv
+[INFO] : 03-09-2022 12:55:06 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:06 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:06 - new match
+[INFO] : 03-09-2022 12:55:06 - writing to 2021/regular/week12/10-jets-texans.csv
+[INFO] : 03-09-2022 12:55:06 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:06 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:06 - new match
+[INFO] : 03-09-2022 12:55:06 - writing to 2021/regular/week12/11-chargers-broncos.csv
+[INFO] : 03-09-2022 12:55:06 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:06 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:06 - new match
+[INFO] : 03-09-2022 12:55:06 - writing to 2021/regular/week12/12-rams-packers.csv
+[INFO] : 03-09-2022 12:55:06 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:07 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:07 - new match
+[INFO] : 03-09-2022 12:55:07 - writing to 2021/regular/week12/13-vikings-49ers.csv
+[INFO] : 03-09-2022 12:55:07 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:07 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:07 - new match
+[INFO] : 03-09-2022 12:55:07 - writing to 2021/regular/week12/14-browns-ravens.csv
+[INFO] : 03-09-2022 12:55:07 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:07 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:07 - Day 49: Monday, November 29, 2021
+[INFO] : 03-09-2022 12:55:07 - new match
+[INFO] : 03-09-2022 12:55:07 - writing to 2021/regular/week12/15-seahawks-washington.csv
+[INFO] : 03-09-2022 12:55:07 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:07 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:13 - Day 50: Thursday, December 2, 2021
+[INFO] : 03-09-2022 12:55:13 - new match
+[INFO] : 03-09-2022 12:55:14 - writing to 2021/regular/week13/01-cowboys-saints.csv
+[INFO] : 03-09-2022 12:55:14 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:14 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:14 - Day 51: Sunday, December 5, 2021
+[INFO] : 03-09-2022 12:55:14 - new match
+[INFO] : 03-09-2022 12:55:14 - writing to 2021/regular/week13/02-buccaneers-falcons.csv
+[INFO] : 03-09-2022 12:55:14 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:14 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:14 - new match
+[INFO] : 03-09-2022 12:55:14 - writing to 2021/regular/week13/03-cardinals-bears.csv
+[INFO] : 03-09-2022 12:55:14 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:15 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:15 - new match
+[INFO] : 03-09-2022 12:55:15 - writing to 2021/regular/week13/04-chargers-bengals.csv
+[INFO] : 03-09-2022 12:55:15 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:17 - new match
+[INFO] : 03-09-2022 12:55:17 - writing to 2021/regular/week13/05-vikings-lions.csv
+[INFO] : 03-09-2022 12:55:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:17 - new match
+[INFO] : 03-09-2022 12:55:18 - writing to 2021/regular/week13/06-giants-dolphins.csv
+[INFO] : 03-09-2022 12:55:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:18 - new match
+[INFO] : 03-09-2022 12:55:18 - writing to 2021/regular/week13/07-eagles-jets.csv
+[INFO] : 03-09-2022 12:55:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:18 - new match
+[INFO] : 03-09-2022 12:55:18 - writing to 2021/regular/week13/08-colts-texans.csv
+[INFO] : 03-09-2022 12:55:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:19 - new match
+[INFO] : 03-09-2022 12:55:19 - writing to 2021/regular/week13/09-washington-raiders.csv
+[INFO] : 03-09-2022 12:55:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:19 - new match
+[INFO] : 03-09-2022 12:55:19 - writing to 2021/regular/week13/10-jaguars-rams.csv
+[INFO] : 03-09-2022 12:55:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:19 - new match
+[INFO] : 03-09-2022 12:55:19 - writing to 2021/regular/week13/11-ravens-steelers.csv
+[INFO] : 03-09-2022 12:55:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:19 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:19 - new match
+[INFO] : 03-09-2022 12:55:19 - writing to 2021/regular/week13/12-49ers-seahawks.csv
+[INFO] : 03-09-2022 12:55:20 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:20 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:20 - new match
+[INFO] : 03-09-2022 12:55:20 - writing to 2021/regular/week13/13-broncos-chiefs.csv
+[INFO] : 03-09-2022 12:55:20 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:20 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:20 - Day 52: Monday, December 6, 2021
+[INFO] : 03-09-2022 12:55:20 - new match
+[INFO] : 03-09-2022 12:55:20 - writing to 2021/regular/week13/14-patriots-bills.csv
+[INFO] : 03-09-2022 12:55:20 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:20 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:25 - Day 53: Thursday, December 9, 2021
+[INFO] : 03-09-2022 12:55:25 - new match
+[INFO] : 03-09-2022 12:55:26 - writing to 2021/regular/week14/01-steelers-vikings.csv
+[INFO] : 03-09-2022 12:55:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:27 - Day 54: Sunday, December 12, 2021
+[INFO] : 03-09-2022 12:55:27 - new match
+[INFO] : 03-09-2022 12:55:27 - writing to 2021/regular/week14/02-ravens-browns.csv
+[INFO] : 03-09-2022 12:55:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:27 - new match
+[INFO] : 03-09-2022 12:55:27 - writing to 2021/regular/week14/03-jaguars-titans.csv
+[INFO] : 03-09-2022 12:55:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:27 - new match
+[INFO] : 03-09-2022 12:55:27 - writing to 2021/regular/week14/04-raiders-chiefs.csv
+[INFO] : 03-09-2022 12:55:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:27 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:27 - new match
+[INFO] : 03-09-2022 12:55:28 - writing to 2021/regular/week14/05-saints-jets.csv
+[INFO] : 03-09-2022 12:55:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:32 - new match
+[INFO] : 03-09-2022 12:55:32 - writing to 2021/regular/week14/06-cowboys-washington.csv
+[INFO] : 03-09-2022 12:55:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:33 - new match
+[INFO] : 03-09-2022 12:55:33 - writing to 2021/regular/week14/07-falcons-panthers.csv
+[INFO] : 03-09-2022 12:55:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:33 - new match
+[INFO] : 03-09-2022 12:55:33 - writing to 2021/regular/week14/08-seahawks-texans.csv
+[INFO] : 03-09-2022 12:55:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:33 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:33 - new match
+[INFO] : 03-09-2022 12:55:33 - writing to 2021/regular/week14/09-lions-broncos.csv
+[INFO] : 03-09-2022 12:55:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:34 - new match
+[INFO] : 03-09-2022 12:55:34 - writing to 2021/regular/week14/10-giants-chargers.csv
+[INFO] : 03-09-2022 12:55:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:34 - new match
+[INFO] : 03-09-2022 12:55:34 - writing to 2021/regular/week14/11-49ers-bengals.csv
+[INFO] : 03-09-2022 12:55:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:34 - new match
+[INFO] : 03-09-2022 12:55:34 - writing to 2021/regular/week14/12-bills-buccaneers.csv
+[INFO] : 03-09-2022 12:55:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:34 - new match
+[INFO] : 03-09-2022 12:55:34 - writing to 2021/regular/week14/13-bears-packers.csv
+[INFO] : 03-09-2022 12:55:34 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:35 - Day 55: Monday, December 13, 2021
+[INFO] : 03-09-2022 12:55:35 - new match
+[INFO] : 03-09-2022 12:55:35 - writing to 2021/regular/week14/14-rams-cardinals.csv
+[INFO] : 03-09-2022 12:55:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:35 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:40 - Day 56: Thursday, December 16, 2021
+[INFO] : 03-09-2022 12:55:40 - new match
+[INFO] : 03-09-2022 12:55:41 - writing to 2021/regular/week15/01-chiefs-chargers.csv
+[INFO] : 03-09-2022 12:55:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:41 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:41 - Day 57: Saturday, December 18, 2021
+[INFO] : 03-09-2022 12:55:41 - new match
+[INFO] : 03-09-2022 12:55:42 - writing to 2021/regular/week15/02-patriots-colts.csv
+[INFO] : 03-09-2022 12:55:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:42 - Day 58: Sunday, December 19, 2021
+[INFO] : 03-09-2022 12:55:42 - new match
+[INFO] : 03-09-2022 12:55:42 - writing to 2021/regular/week15/03-panthers-bills.csv
+[INFO] : 03-09-2022 12:55:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:42 - new match
+[INFO] : 03-09-2022 12:55:42 - writing to 2021/regular/week15/04-cardinals-lions.csv
+[INFO] : 03-09-2022 12:55:42 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:43 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:43 - new match
+[INFO] : 03-09-2022 12:55:43 - writing to 2021/regular/week15/05-jets-dolphins.csv
+[INFO] : 03-09-2022 12:55:43 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:45 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:45 - new match
+[INFO] : 03-09-2022 12:55:45 - writing to 2021/regular/week15/06-cowboys-giants.csv
+[INFO] : 03-09-2022 12:55:45 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:45 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:45 - new match
+[INFO] : 03-09-2022 12:55:45 - writing to 2021/regular/week15/07-titans-steelers.csv
+[INFO] : 03-09-2022 12:55:45 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:45 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:45 - new match
+[INFO] : 03-09-2022 12:55:45 - writing to 2021/regular/week15/08-texans-jaguars.csv
+[INFO] : 03-09-2022 12:55:45 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:45 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:45 - new match
+[INFO] : 03-09-2022 12:55:45 - writing to 2021/regular/week15/09-bengals-broncos.csv
+[INFO] : 03-09-2022 12:55:45 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:46 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:46 - new match
+[INFO] : 03-09-2022 12:55:46 - writing to 2021/regular/week15/10-falcons-49ers.csv
+[INFO] : 03-09-2022 12:55:46 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:46 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:46 - new match
+[INFO] : 03-09-2022 12:55:46 - writing to 2021/regular/week15/11-packers-ravens.csv
+[INFO] : 03-09-2022 12:55:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:47 - new match
+[INFO] : 03-09-2022 12:55:47 - writing to 2021/regular/week15/12-saints-buccaneers.csv
+[INFO] : 03-09-2022 12:55:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:47 - Day 59: Monday, December 20, 2021
+[INFO] : 03-09-2022 12:55:47 - new match
+[INFO] : 03-09-2022 12:55:47 - writing to 2021/regular/week15/13-raiders-browns.csv
+[INFO] : 03-09-2022 12:55:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:47 - new match
+[INFO] : 03-09-2022 12:55:47 - writing to 2021/regular/week15/14-vikings-bears.csv
+[INFO] : 03-09-2022 12:55:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:47 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:47 - Day 60: Tuesday, December 21, 2021
+[INFO] : 03-09-2022 12:55:47 - new match
+[INFO] : 03-09-2022 12:55:47 - writing to 2021/regular/week15/15-seahawks-rams.csv
+[INFO] : 03-09-2022 12:55:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:48 - new match
+[INFO] : 03-09-2022 12:55:48 - writing to 2021/regular/week15/16-washington-eagles.csv
+[INFO] : 03-09-2022 12:55:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:48 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:53 - Day 61: Thursday, December 23, 2021
+[INFO] : 03-09-2022 12:55:53 - new match
+[INFO] : 03-09-2022 12:55:54 - writing to 2021/regular/week16/01-49ers-titans.csv
+[INFO] : 03-09-2022 12:55:54 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:54 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:54 - Day 62: Saturday, December 25, 2021
+[INFO] : 03-09-2022 12:55:54 - new match
+[INFO] : 03-09-2022 12:55:54 - writing to 2021/regular/week16/02-browns-packers.csv
+[INFO] : 03-09-2022 12:55:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:55 - new match
+[INFO] : 03-09-2022 12:55:55 - writing to 2021/regular/week16/03-colts-cardinals.csv
+[INFO] : 03-09-2022 12:55:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:55 - Day 63: Sunday, December 26, 2021
+[INFO] : 03-09-2022 12:55:55 - new match
+[INFO] : 03-09-2022 12:55:55 - writing to 2021/regular/week16/04-lions-falcons.csv
+[INFO] : 03-09-2022 12:55:55 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:56 - quarter scores formatted
+[INFO] : 03-09-2022 12:55:56 - new match
+[INFO] : 03-09-2022 12:56:01 - writing to 2021/regular/week16/05-ravens-bengals.csv
+[INFO] : 03-09-2022 12:56:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:01 - new match
+[INFO] : 03-09-2022 12:56:01 - writing to 2021/regular/week16/06-rams-vikings.csv
+[INFO] : 03-09-2022 12:56:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:01 - new match
+[INFO] : 03-09-2022 12:56:01 - writing to 2021/regular/week16/07-bills-patriots.csv
+[INFO] : 03-09-2022 12:56:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:01 - new match
+[INFO] : 03-09-2022 12:56:01 - writing to 2021/regular/week16/08-jaguars-jets.csv
+[INFO] : 03-09-2022 12:56:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:02 - new match
+[INFO] : 03-09-2022 12:56:02 - writing to 2021/regular/week16/09-giants-eagles.csv
+[INFO] : 03-09-2022 12:56:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:02 - new match
+[INFO] : 03-09-2022 12:56:02 - writing to 2021/regular/week16/10-buccaneers-panthers.csv
+[INFO] : 03-09-2022 12:56:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:02 - new match
+[INFO] : 03-09-2022 12:56:02 - writing to 2021/regular/week16/11-chargers-texans.csv
+[INFO] : 03-09-2022 12:56:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:02 - new match
+[INFO] : 03-09-2022 12:56:02 - writing to 2021/regular/week16/12-bears-seahawks.csv
+[INFO] : 03-09-2022 12:56:02 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:03 - new match
+[INFO] : 03-09-2022 12:56:03 - writing to 2021/regular/week16/13-steelers-chiefs.csv
+[INFO] : 03-09-2022 12:56:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:03 - new match
+[INFO] : 03-09-2022 12:56:03 - writing to 2021/regular/week16/14-broncos-raiders.csv
+[INFO] : 03-09-2022 12:56:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:03 - new match
+[INFO] : 03-09-2022 12:56:03 - writing to 2021/regular/week16/15-washington-cowboys.csv
+[INFO] : 03-09-2022 12:56:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:03 - Day 64: Monday, December 27, 2021
+[INFO] : 03-09-2022 12:56:03 - new match
+[INFO] : 03-09-2022 12:56:03 - writing to 2021/regular/week16/16-dolphins-saints.csv
+[INFO] : 03-09-2022 12:56:03 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:04 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:09 - Day 65: Sunday, January 2, 2022
+[INFO] : 03-09-2022 12:56:09 - new match
+[INFO] : 03-09-2022 12:56:10 - writing to 2021/regular/week17/01-falcons-bills.csv
+[INFO] : 03-09-2022 12:56:10 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:10 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:10 - new match
+[INFO] : 03-09-2022 12:56:10 - writing to 2021/regular/week17/02-giants-bears.csv
+[INFO] : 03-09-2022 12:56:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:11 - new match
+[INFO] : 03-09-2022 12:56:11 - writing to 2021/regular/week17/03-chiefs-bengals.csv
+[INFO] : 03-09-2022 12:56:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:11 - new match
+[INFO] : 03-09-2022 12:56:11 - writing to 2021/regular/week17/04-dolphins-titans.csv
+[INFO] : 03-09-2022 12:56:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:11 - new match
+[INFO] : 03-09-2022 12:56:11 - writing to 2021/regular/week17/05-raiders-colts.csv
+[INFO] : 03-09-2022 12:56:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:11 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:11 - new match
+[INFO] : 03-09-2022 12:56:11 - writing to 2021/regular/week17/06-jaguars-patriots.csv
+[INFO] : 03-09-2022 12:56:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:16 - new match
+[INFO] : 03-09-2022 12:56:16 - writing to 2021/regular/week17/07-buccaneers-jets.csv
+[INFO] : 03-09-2022 12:56:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:16 - new match
+[INFO] : 03-09-2022 12:56:16 - writing to 2021/regular/week17/08-eagles-washington.csv
+[INFO] : 03-09-2022 12:56:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:16 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:16 - new match
+[INFO] : 03-09-2022 12:56:16 - writing to 2021/regular/week17/09-rams-ravens.csv
+[INFO] : 03-09-2022 12:56:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:17 - new match
+[INFO] : 03-09-2022 12:56:17 - writing to 2021/regular/week17/10-broncos-chargers.csv
+[INFO] : 03-09-2022 12:56:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:17 - new match
+[INFO] : 03-09-2022 12:56:17 - writing to 2021/regular/week17/11-texans-49ers.csv
+[INFO] : 03-09-2022 12:56:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:17 - new match
+[INFO] : 03-09-2022 12:56:17 - writing to 2021/regular/week17/12-cardinals-cowboys.csv
+[INFO] : 03-09-2022 12:56:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:17 - new match
+[INFO] : 03-09-2022 12:56:17 - writing to 2021/regular/week17/13-panthers-saints.csv
+[INFO] : 03-09-2022 12:56:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:17 - new match
+[INFO] : 03-09-2022 12:56:17 - writing to 2021/regular/week17/14-lions-seahawks.csv
+[INFO] : 03-09-2022 12:56:17 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:18 - new match
+[INFO] : 03-09-2022 12:56:18 - writing to 2021/regular/week17/15-vikings-packers.csv
+[INFO] : 03-09-2022 12:56:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:18 - Day 66: Monday, January 3, 2022
+[INFO] : 03-09-2022 12:56:18 - new match
+[INFO] : 03-09-2022 12:56:18 - writing to 2021/regular/week17/16-browns-steelers.csv
+[INFO] : 03-09-2022 12:56:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:18 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:23 - Day 67: Saturday, January 8, 2022
+[INFO] : 03-09-2022 12:56:23 - new match
+[INFO] : 03-09-2022 12:56:25 - writing to 2021/regular/week18/01-chiefs-broncos.csv
+[INFO] : 03-09-2022 12:56:25 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:25 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:25 - new match
+[INFO] : 03-09-2022 12:56:25 - writing to 2021/regular/week18/02-cowboys-eagles.csv
+[INFO] : 03-09-2022 12:56:25 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:25 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:25 - Day 68: Sunday, January 9, 2022
+[INFO] : 03-09-2022 12:56:25 - new match
+[INFO] : 03-09-2022 12:56:25 - writing to 2021/regular/week18/03-bengals-browns.csv
+[INFO] : 03-09-2022 12:56:25 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:25 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:25 - new match
+[INFO] : 03-09-2022 12:56:25 - writing to 2021/regular/week18/04-packers-lions.csv
+[INFO] : 03-09-2022 12:56:25 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:26 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:26 - new match
+[INFO] : 03-09-2022 12:56:30 - writing to 2021/regular/week18/05-bears-vikings.csv
+[INFO] : 03-09-2022 12:56:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:30 - new match
+[INFO] : 03-09-2022 12:56:30 - writing to 2021/regular/week18/06-washington-giants.csv
+[INFO] : 03-09-2022 12:56:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:30 - new match
+[INFO] : 03-09-2022 12:56:30 - writing to 2021/regular/week18/07-colts-jaguars.csv
+[INFO] : 03-09-2022 12:56:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:30 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:30 - new match
+[INFO] : 03-09-2022 12:56:31 - writing to 2021/regular/week18/08-steelers-ravens.csv
+[INFO] : 03-09-2022 12:56:31 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:31 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:31 - new match
+[INFO] : 03-09-2022 12:56:31 - writing to 2021/regular/week18/09-titans-texans.csv
+[INFO] : 03-09-2022 12:56:31 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:31 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:31 - new match
+[INFO] : 03-09-2022 12:56:31 - writing to 2021/regular/week18/10-saints-falcons.csv
+[INFO] : 03-09-2022 12:56:31 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:31 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:31 - new match
+[INFO] : 03-09-2022 12:56:31 - writing to 2021/regular/week18/11-jets-bills.csv
+[INFO] : 03-09-2022 12:56:31 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:31 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:31 - new match
+[INFO] : 03-09-2022 12:56:31 - writing to 2021/regular/week18/12-49ers-rams.csv
+[INFO] : 03-09-2022 12:56:31 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:31 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:31 - new match
+[INFO] : 03-09-2022 12:56:32 - writing to 2021/regular/week18/13-patriots-dolphins.csv
+[INFO] : 03-09-2022 12:56:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:32 - new match
+[INFO] : 03-09-2022 12:56:32 - writing to 2021/regular/week18/14-seahawks-cardinals.csv
+[INFO] : 03-09-2022 12:56:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:32 - new match
+[INFO] : 03-09-2022 12:56:32 - writing to 2021/regular/week18/15-panthers-buccaneers.csv
+[INFO] : 03-09-2022 12:56:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:32 - new match
+[INFO] : 03-09-2022 12:56:32 - writing to 2021/regular/week18/16-chargers-raiders.csv
+[INFO] : 03-09-2022 12:56:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:32 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:32 - new season type
+[INFO] : 03-09-2022 12:56:37 - Day 69: Saturday, January 15, 2022
+[INFO] : 03-09-2022 12:56:37 - new match
+[INFO] : 03-09-2022 12:56:39 - writing to 2021/postseason/week1/01-raiders-bengals.csv
+[INFO] : 03-09-2022 12:56:39 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:39 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:39 - new match
+[INFO] : 03-09-2022 12:56:39 - writing to 2021/postseason/week1/02-patriots-bills.csv
+[INFO] : 03-09-2022 12:56:39 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:39 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:39 - Day 70: Sunday, January 16, 2022
+[INFO] : 03-09-2022 12:56:39 - new match
+[INFO] : 03-09-2022 12:56:39 - writing to 2021/postseason/week1/03-eagles-buccaneers.csv
+[INFO] : 03-09-2022 12:56:39 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:39 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:39 - new match
+[INFO] : 03-09-2022 12:56:39 - writing to 2021/postseason/week1/04-49ers-cowboys.csv
+[INFO] : 03-09-2022 12:56:39 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:39 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:39 - new match
+[INFO] : 03-09-2022 12:56:39 - writing to 2021/postseason/week1/05-steelers-chiefs.csv
+[INFO] : 03-09-2022 12:56:39 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:40 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:40 - Day 71: Monday, January 17, 2022
+[INFO] : 03-09-2022 12:56:40 - new match
+[INFO] : 03-09-2022 12:56:44 - writing to 2021/postseason/week1/06-cardinals-rams.csv
+[INFO] : 03-09-2022 12:56:45 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:45 - quarter scores formatted
+[INFO] : 03-09-2022 12:56:50 - Day 72: Saturday, January 22, 2022
+[INFO] : 03-09-2022 12:56:51 - new match
+[INFO] : 03-09-2022 12:57:00 - writing to 2021/postseason/week2/01-bengals-titans.csv
+[INFO] : 03-09-2022 12:57:00 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:00 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:00 - new match
+[INFO] : 03-09-2022 12:57:01 - writing to 2021/postseason/week2/02-49ers-packers.csv
+[INFO] : 03-09-2022 12:57:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:01 - Day 73: Sunday, January 23, 2022
+[INFO] : 03-09-2022 12:57:01 - new match
+[INFO] : 03-09-2022 12:57:01 - writing to 2021/postseason/week2/03-rams-buccaneers.csv
+[INFO] : 03-09-2022 12:57:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:01 - new match
+[INFO] : 03-09-2022 12:57:01 - writing to 2021/postseason/week2/04-bills-chiefs.csv
+[INFO] : 03-09-2022 12:57:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:01 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:08 - Day 74: Sunday, January 30, 2022
+[INFO] : 03-09-2022 12:57:09 - new match
+[INFO] : 03-09-2022 12:57:09 - writing to 2021/postseason/week3/01-bengals-chiefs.csv
+[INFO] : 03-09-2022 12:57:10 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:10 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:10 - new match
+[INFO] : 03-09-2022 12:57:10 - writing to 2021/postseason/week3/02-49ers-rams.csv
+[INFO] : 03-09-2022 12:57:10 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:10 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:15 - Day 75: Sunday, February 6, 2022
+[INFO] : 03-09-2022 12:57:16 - new match
+[INFO] : 03-09-2022 12:57:16 - writing to 2021/postseason/week4/01-nfc-afc.csv
+[INFO] : 03-09-2022 12:57:24 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:24 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:29 - Day 76: Sunday, February 13, 2022
+[INFO] : 03-09-2022 12:57:30 - new match
+[INFO] : 03-09-2022 12:57:30 - writing to 2021/postseason/week5/01-rams-bengals.csv
+[INFO] : 03-09-2022 12:57:31 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:31 - quarter scores formatted
+[INFO] : 03-09-2022 12:57:31 - headless: False - 407.5833978652954
+

@@ -45,6 +45,7 @@ class Scrape:
         self.year = year
         self.single_year = single_year
         self.week = week
+        self.current_week_match_counter = 0
         self.team_one = team_one
         self.team_two = team_two
         self.season_type = season_type
@@ -88,14 +89,19 @@ class Scrape:
             for each_competitor in self.competitors:
                 self.current_match.append(each_competitor.text.split('\n')[0])
             print('self.current_match', self.current_match)
+            self.current_week_match_counter += 1
 
             self.season_type_string = self.pre_reg_post[self.season_type]
-            path = f'{self.year}/{self.season_type_string}/{self.week}'
+            path = f'{self.year}/{self.season_type_string}/week{self.week}'
+
             is_dir_exist = os.path.exists(path)
             if not is_dir_exist:
                 os.makedirs(path)
             file_extension = '.csv'
-            filename = f'{self.current_match[0].lower()}-{self.current_match[1].lower() + file_extension}'
+            file_pre_name_counter = str(self.current_week_match_counter)
+            if len(file_pre_name_counter) == 1:
+                file_pre_name_counter = ''.join(('0', file_pre_name_counter))
+            filename = f'{file_pre_name_counter}-{self.current_match[0].lower()}-{self.current_match[1].lower() + file_extension}'
             absolute_path = os.path.join(path, filename)
             logging.info(f'writing to {absolute_path}')
 
@@ -136,6 +142,8 @@ class Scrape:
         link = f'{BASE}{self.week}/year/{self.single_year}/seasontype/'
         self.driver.get(link)
         self.get_box()
+    def reset_week_game_counter(self):
+        self.current_week_match_counter = 0
 
     def process_season(self):
         for season_type, weeks in self.seasons.items():
@@ -146,6 +154,7 @@ class Scrape:
                 link = f'{BASE}{self.week}/year/{self.year}/seasontype/{self.season_type}'
                 print(link)
                 self.driver.get(link)
+                self.reset_week_game_counter()
                 self.get_box()
 
     def main(self):
