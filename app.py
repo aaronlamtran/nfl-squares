@@ -180,7 +180,7 @@ def script():
     start_time = time.time()
     for year in range(2010, 2021):
         print(year)
-        scrape = Scrape(year=year)
+        scrape = Scrape(year=year, headless=True)
     # scrape = Scrape(year=2017)
     # scrape = Scrape(mode='single', season_type=3, year=2016, week=1)
 
