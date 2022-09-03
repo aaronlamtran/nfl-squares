@@ -14,3 +14,12 @@ headless: False - 40.7256920337677
 headless: False - 1.2490630149841309
 headless: False - 39.18460726737976
 headless: True - 34.652397871017456
+headless: True - 39.051488161087036
+headless: True - 35.96620798110962
+headless: True - 35.73718595504761
+headless: True - 37.16139578819275
+headless: True - 34.845168113708496
+headless: True - 36.14033913612366
+headless: True - 34.89231610298157
+headless: False - 387.1229441165924
+headless: False - 387.22677397727966

@@ -27,10 +27,17 @@ BASE = os.getenv('BASE')
 
 
 class Scrape:
-    def __init__(self, season_type='pre', week=1, team_one='raiders', team_two='packers', year=2022, headless=False, single_year=None):
-        self.seasons = {"1": list(range(1, 5)),
-                        "2": list(range(1, 19)),
-                        "3": list(range(1, 6))}
+    def __init__(self, season_type='pre', week=1, team_one='raiders', team_two='packers', year=2022, headless=False, single_year=None, mode='all'):
+        self.seasons = {
+            "1": list(range(1, 5)),
+            "2": list(range(1, 19)),
+            "3": list(range(1, 6))
+        }
+        self.pre_reg_post = {
+            "1": "preseason",
+            "2": "regular",
+            "3": "postseason"
+        }
         self.boxes = ''
         self.matches = ''
         self.competitors = ''
@@ -41,14 +48,20 @@ class Scrape:
         self.team_one = team_one
         self.team_two = team_two
         self.season_type = season_type
+        self.mode = mode
+        self.headless = headless
+        self.season_type_string = ''
         self.score_file = open("scores.txt", 'a')
+        self.init_driver()
+        self.main()
+
+    def init_driver(self):
         self.chrome_options = Options()
-        self.chrome_options.headless = headless
+        self.chrome_options.headless = self.headless
         self.service = Service(executable_path=CHROME_DRIVER_PATH)
         self.driver = webdriver.Chrome(
             options=self.chrome_options, service=self.service)
         self.driver.implicitly_wait(50)
-        self.main()
 
     def get_box(self):
         self.boxes = self.driver.find_elements(
@@ -71,6 +84,22 @@ class Scrape:
             # print(match.text + '\n\n')
             logging.info('new match')
             self.competitors = match.find_elements(By.TAG_NAME, 'li')
+            self.current_match = []
+            for each_competitor in self.competitors:
+                self.current_match.append(each_competitor.text.split('\n')[0])
+            print('self.current_match', self.current_match)
+
+            self.season_type_string = self.pre_reg_post[self.season_type]
+            path = f'{self.year}/{self.season_type_string}/{self.week}'
+            is_dir_exist = os.path.exists(path)
+            if not is_dir_exist:
+                os.makedirs(path)
+            file_extension = '.csv'
+            filename = f'{self.current_match[0].lower()}-{self.current_match[1].lower() + file_extension}'
+            absolute_path = os.path.join(path, filename)
+            logging.info(f'writing to {absolute_path}')
+
+            self.current_match_file = open(absolute_path, 'w')
             self.get_quarter_scores()
 
         self.day_count += 1
@@ -95,10 +124,13 @@ class Scrape:
             text = text.replace("'", '')
             row_scores.append(text)
         row_scores = " ".join(str(x) for x in row_scores)
-        logging.info('date formatted')
+        logging.info('quarter scores formatted')
         print(row_scores)
 
         self.score_file.write(row_scores + '\n')
+        # logging.info(f'score_file: new row added')
+        self.current_match_file.write(row_scores + '\n')
+        # logging.info(f'score_file: new row added')
 
     def process_single_week(self):
         link = f'{BASE}{self.week}/year/{self.single_year}/seasontype/'
@@ -109,22 +141,25 @@ class Scrape:
         for season_type, weeks in self.seasons.items():
             logging.info('new season type')
             for week in weeks:
-                link = f'{BASE}{week}/year/{self.year}/seasontype/{season_type}'
+                self.week = week
+                self.season_type = season_type
+                link = f'{BASE}{self.week}/year/{self.year}/seasontype/{self.season_type}'
                 print(link)
                 self.driver.get(link)
                 self.get_box()
 
     def main(self):
-        if self.single_year and self.week:
-            self.process_single_week()
-        else:
-            print('skipping because none')
+        if self.mode == 'all':
+            print('skipping single year processing because mode == all')
             self.process_season()
+        else:
+            self.process_single_week()
+
 
 def script():
     start_time = time.time()
 
-    scrape = Scrape(single_year=2021, week=2, headless=True)
+    scrape = Scrape(year=2021, week=2)
 
     end_time = time.time()
     execution_time = str(end_time - start_time)
