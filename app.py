@@ -27,7 +27,7 @@ BASE = os.getenv('BASE')
 
 
 class Scrape:
-    def __init__(self, season_type='pre', week=1, team_one='raiders', team_two='packers', year=2022, headless=False, single_year=None, mode='all'):
+    def __init__(self, season_type='1', week=1, team_one='raiders', team_two='packers', year=2022, headless=False, single_year=None, mode='season'):
         self.seasons = {
             "1": list(range(1, 5)),
             "2": list(range(1, 19)),
@@ -91,7 +91,7 @@ class Scrape:
             print('self.current_match', self.current_match)
             self.current_week_match_counter += 1
 
-            self.season_type_string = self.pre_reg_post[self.season_type]
+            self.season_type_string = self.pre_reg_post[str(self.season_type)]
             path = f'{self.year}/{self.season_type_string}/week{self.week}'
 
             is_dir_exist = os.path.exists(path)
@@ -103,7 +103,8 @@ class Scrape:
                 file_pre_name_counter = ''.join(('0', file_pre_name_counter))
             filename = f'{file_pre_name_counter}-{self.current_match[0].lower()}-{self.current_match[1].lower() + file_extension}'
             absolute_path = os.path.join(path, filename)
-            logging.info(f'writing to {absolute_path}')
+
+            logging.info(f'creating {absolute_path}')
 
             self.current_match_file = open(absolute_path, 'w')
             self.get_quarter_scores()
@@ -134,18 +135,27 @@ class Scrape:
         print(row_scores)
 
         self.score_file.write(row_scores + '\n')
-        # logging.info(f'score_file: new row added')
+        # insert method to calculate totals from row_scores
         self.current_match_file.write(row_scores + '\n')
-        # logging.info(f'score_file: new row added')
+        logging.info(f'score_file: new formatted row added')
 
     def process_single_week(self):
-        link = f'{BASE}{self.week}/year/{self.single_year}/seasontype/'
+        link = f'{BASE}{self.week}/year/{self.year}/seasontype/{self.season_type}'
+        print(link)
         self.driver.get(link)
         self.get_box()
+
     def reset_week_game_counter(self):
         self.current_week_match_counter = 0
+        logging.info('week_game_counter reset')
 
     def process_season(self):
+        if self.year < 2021:
+            self.seasons = {
+                "1": list(range(1, 5)),
+                "2": list(range(1, 18)),
+                "3": list(range(1, 6))
+            }
         for season_type, weeks in self.seasons.items():
             logging.info('new season type')
             for week in weeks:
@@ -158,17 +168,21 @@ class Scrape:
                 self.get_box()
 
     def main(self):
-        if self.mode == 'all':
-            print('skipping single year processing because mode == all')
+        if self.mode == 'season':
+            print('prcoessing whole season')
             self.process_season()
         else:
+            print('prcoessing single week')
             self.process_single_week()
 
 
 def script():
     start_time = time.time()
-
-    scrape = Scrape(year=2021, week=2)
+    for year in range(2010, 2021):
+        print(year)
+        Scrape(year=year)
+    # scrape = Scrape(year=2017)
+    # scrape = Scrape(mode='single', season_type=3, year=2016, week=1)
 
     end_time = time.time()
     execution_time = str(end_time - start_time)
