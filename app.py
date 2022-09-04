@@ -16,6 +16,8 @@ import logging
 logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
                     format='[%(levelname)s] : %(asctime)s - %(message)s', datefmt='%d-%m-%Y %H:%M:%S')
 
+error_logger = logging.basicConfig(level=logging.ERROR, filename='error.log', filemode='a',
+                    format='[%(levelname)s] : %(asctime)s - %(message)s', datefmt='%d-%m-%Y %H:%M:%S')
 
 load_dotenv()
 
@@ -177,13 +179,16 @@ class Scrape:
 
 
 def script():
-    start_time = time.time()
-    for year in range(2010, 2021):
-        print(year)
-        scrape = Scrape(year=year, headless=True)
-    # scrape = Scrape(year=2017)
-    # scrape = Scrape(mode='single', season_type=3, year=2016, week=1)
-
+    try:
+        start_time = time.time()
+        # for year in range(2002, 2009):
+        #     print(year)
+        #     scrape = Scrape(year=year, headless=True)
+        scrape = Scrape(year=2009, headless=True)
+        # scrape = Scrape(mode='single', season_type=3, year=2009, week=1)
+    except Exception as error:
+        logging.error(error)
+        error_logger.error(error)
     end_time = time.time()
     execution_time = str(end_time - start_time)
 
