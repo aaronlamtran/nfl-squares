@@ -94,7 +94,7 @@ class Scrape:
             self.current_week_match_counter += 1
 
             self.season_type_string = self.pre_reg_post[str(self.season_type)]
-            path = f'{self.year}/{self.season_type_string}/week{self.week}'
+            path = f'all-seasons/{self.year}/{self.season_type_string}/week{self.week}'
 
             is_dir_exist = os.path.exists(path)
             if not is_dir_exist:
@@ -184,7 +184,7 @@ def script():
         # for year in range(2002, 2009):
         #     print(year)
         #     scrape = Scrape(year=year, headless=True)
-        scrape = Scrape(year=2009, headless=True)
+        scrape = Scrape(year=2021, headless=True)
         # scrape = Scrape(mode='single', season_type=3, year=2009, week=1)
     except Exception as error:
         logging.error(error)
