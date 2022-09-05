@@ -9,15 +9,14 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium import webdriver
+import lineclass
 import os
 import time
 import logging
 
 logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
-                    format='[%(levelname)s] : %(asctime)s - %(message)s', datefmt='%d-%m-%Y %H:%M:%S')
+                    format='[%(levelname)s] : %(asctime)s - %(message)s', datefmt='%m-%d-%y %H:%M:%S')
 
-error_logger = logging.basicConfig(level=logging.ERROR, filename='error.log', filemode='a',
-                    format='[%(levelname)s] : %(asctime)s - %(message)s', datefmt='%d-%m-%Y %H:%M:%S')
 
 load_dotenv()
 
@@ -29,7 +28,7 @@ BASE = os.getenv('BASE')
 
 
 class Scrape:
-    def __init__(self, season_type='1', week=1, team_one='raiders', team_two='packers', year=2022, headless=False, single_year=None, mode='season'):
+    def __init__(self, season_type='2', week=1, team_one='raiders', team_two='packers', year=2022, headless=False, single_year=None, mode='season'):
         self.seasons = {
             "1": list(range(1, 5)),
             "2": list(range(1, 19)),
@@ -55,8 +54,9 @@ class Scrape:
         self.headless = headless
         self.season_type_string = ''
         self.score_file = open("scores.txt", 'a')
+        self.log_pre_string = f'Y:{self.year}-W:{self.week}-ST:{self.season_type}'
         self.init_driver()
-        self.main()
+        # self.main()
 
     def init_driver(self):
         self.chrome_options = Options()
@@ -76,7 +76,7 @@ class Scrape:
             date = box.find_element(
                 By.CLASS_NAME, 'Card__Header__Title.Card__Header__Title--no-theme')
             print(f'Day {self.day_count}: {date.text}')
-            logging.info(f'Day {self.day_count}: {date.text}')
+            logging.info(f'{self.log_pre_string}: Day {self.day_count}: {date.text}')
 
             self.matches = box.find_elements(
                 By.CLASS_NAME, 'ScoreboardScoreCell__Competitors')
@@ -85,7 +85,7 @@ class Scrape:
     def get_competitors(self):
         for match in self.matches:
             # print(match.text + '\n\n')
-            logging.info('new match')
+            logging.info(f'{self.log_pre_string}: new match')
             self.competitors = match.find_elements(By.TAG_NAME, 'li')
             self.current_match = []
             for each_competitor in self.competitors:
@@ -94,21 +94,37 @@ class Scrape:
             self.current_week_match_counter += 1
 
             self.season_type_string = self.pre_reg_post[str(self.season_type)]
-            path = f'all-seasons/{self.year}/{self.season_type_string}/week{self.week}'
+
+            path = f'all-seasons/csv/{self.year}/{self.season_type_string}/week{self.week}'
+            path_flattened = f'all-seasons/txt/{self.year}/{self.season_type_string}/week{self.week}'
 
             is_dir_exist = os.path.exists(path)
+            is_dir_exist_flattened = os.path.exists(path_flattened)
+
             if not is_dir_exist:
                 os.makedirs(path)
+            if not is_dir_exist_flattened:
+                os.makedirs(path_flattened)
+
             file_extension = '.csv'
+            file_extension_flattened = '.txt'
             file_pre_name_counter = str(self.current_week_match_counter)
+
             if len(file_pre_name_counter) == 1:
                 file_pre_name_counter = ''.join(('0', file_pre_name_counter))
-            filename = f'{file_pre_name_counter}-{self.current_match[0].lower()}-{self.current_match[1].lower() + file_extension}'
-            absolute_path = os.path.join(path, filename)
 
-            logging.info(f'creating {absolute_path}')
+            filename = f'{file_pre_name_counter}-{self.current_match[0].lower()}-{self.current_match[1].lower() + file_extension}'
+            filename_flattened = f'{file_pre_name_counter}-{self.current_match[0].lower()}-{self.current_match[1].lower() + file_extension_flattened}'
+
+            absolute_path = os.path.join(path, filename)
+            absolute_path_flattened = os.path.join(path_flattened, filename_flattened)
+
+            logging.info(f'{self.log_pre_string}: creating {absolute_path}')
+            logging.info(f'{self.log_pre_string}: creating {absolute_path_flattened}')
 
             self.current_match_file = open(absolute_path, 'w')
+            self.flattened_match_file = open(absolute_path_flattened, 'w')
+
             self.get_quarter_scores()
 
         self.day_count += 1
@@ -133,23 +149,34 @@ class Scrape:
             text = text.replace("'", '')
             row_scores.append(text)
         row_scores = " ".join(str(x) for x in row_scores)
-        logging.info('quarter scores formatted')
+        logging.info(f'{self.log_pre_string}: quarter scores formatted')
         print(row_scores)
-
+        line = lineclass.WLine(row_scores)
+        print(line.get_line())
         self.score_file.write(row_scores + '\n')
+        self.score_file.write(f'from Wline:{line.get_line()}')
+
         # insert method to calculate totals from row_scores
         self.current_match_file.write(row_scores + '\n')
-        logging.info(f'score_file: new formatted row added')
+        self.flattened_match_file.write(line.get_line() + '\n')
+        logging.info(f'{self.log_pre_string}: score_file: new formatted row added')
 
-    def process_single_week(self):
+    def process_single_week(self, year=2021, week=2):
+        self.year = year
+        self.week = week #TODO handle season_type
+        self.update_log_string()
         link = f'{BASE}{self.week}/year/{self.year}/seasontype/{self.season_type}'
         print(link)
         self.driver.get(link)
         self.get_box()
+        self.close_driver()
 
     def reset_week_game_counter(self):
         self.current_week_match_counter = 0
-        logging.info('week_game_counter reset')
+        logging.info(f'{self.log_pre_string}::week_game_counter reset')
+
+    def update_log_string(self):
+        self.log_pre_string = f'Y:{self.year}-W:{self.week}-ST:{self.season_type}'
 
     def process_season(self):
         if self.year < 2021:
@@ -159,15 +186,29 @@ class Scrape:
                 "3": list(range(1, 6))
             }
         for season_type, weeks in self.seasons.items():
-            logging.info('new season type')
+            logging.info(f'{self.log_pre_string}:new season type')
             for week in weeks:
                 self.week = week
                 self.season_type = season_type
+                self.update_log_string()
                 link = f'{BASE}{self.week}/year/{self.year}/seasontype/{self.season_type}'
                 print(link)
                 self.driver.get(link)
                 self.reset_week_game_counter()
                 self.get_box()
+        # self.close_driver()
+
+    def close_driver(self):
+        self.driver.close()
+
+    def process_years(self, from_year=2002, to_year=2021):
+        print(f'processing seasons from {from_year} to {to_year}')
+        for year in range(from_year, to_year):
+            print(year)
+            self.year = year
+            self.process_season()
+        self.close_driver()
+            # scrape = Scrape(year=year, headless=True)
 
     def main(self):
         if self.mode == 'season':
@@ -181,27 +222,28 @@ class Scrape:
 def script():
     try:
         start_time = time.time()
-        # for year in range(2002, 2009):
-        #     print(year)
-        #     scrape = Scrape(year=year, headless=True)
-        scrape = Scrape(year=2021, headless=True)
-        # scrape = Scrape(mode='single', season_type=3, year=2009, week=1)
+
+        scrape = Scrape(headless=True)
+        scrape.process_years(from_year=2010, to_year=2022)
+        # scrape.process_single_week(year=2003, week=7)
+
+        end_time = time.time()
+        execution_time = str(end_time - start_time)
+
+        print('Execution time in seconds: ' + execution_time)
+
+        time_file = open("time.txt", "a")
+
+        output = f"headless: " + str(scrape.chrome_options.headless) + \
+            " - " + execution_time + "\n"
+
+        logging.info(output)
+
+        time_file.write(output)
     except Exception as error:
+        print(error)
         logging.error(error)
-        error_logger.error(error)
-    end_time = time.time()
-    execution_time = str(end_time - start_time)
 
-    print('Execution time in seconds: ' + execution_time)
-
-    time_file = open("time.txt", "a")
-
-    output = f"headless: " + str(scrape.chrome_options.headless) + \
-        " - " + execution_time + "\n"
-
-    logging.info(output)
-
-    time_file.write(output)
 
 
 if __name__ == "__main__":
