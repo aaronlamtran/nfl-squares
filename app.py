@@ -225,7 +225,7 @@ def script():
 
         scrape = Scrape(headless=True)
         scrape.process_years(from_year=2010, to_year=2022)
-        # scrape.process_single_week(year=2003, week=7)
+
 
         end_time = time.time()
         execution_time = str(end_time - start_time)
