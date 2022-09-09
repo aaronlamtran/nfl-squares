@@ -1,9 +1,22 @@
 import os
 import glob
 import time
+from datetime import date
+import app
+
+scrape = app.Scrape()
+
+today = date.today()
+
 start = time.time()
 
 # print('hello')
+def check_if_today_has_football():
+
+    d1 = today.strftime("%B %d, %Y")
+    print('d1', d1)
+    scrape.keep_looping_week(year=2022, week=1)
+    pass
 
 
 def try_this():
@@ -33,6 +46,9 @@ def try_this():
             'line_two_home': line_two
             # need team_one_away
             # need team_two_home,
+            # need away_q1, q2, 3, 4, f
+            # need home_q1, q2, 3, 4, f
+            # need game_done
         }
         found.append(payload)
     print(found)
@@ -48,4 +64,5 @@ def try_this():
 
 
 if __name__ == "__main__":
-    try_this()
+#     try_this()
+    check_if_today_has_football()

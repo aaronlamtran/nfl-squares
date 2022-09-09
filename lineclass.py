@@ -14,6 +14,8 @@ class WLine:
             self.quarter_scores = '0,0,0,0'
         if '-' in self.quarter_scores:
             self.quarter_scores = self.quarter_scores.replace('-', '0')
+        # if len(self.quarter_scores.split(',')) < 4:
+
 
     def make_score_string(self):
         quarters = self.quarter_scores.split(',')
@@ -34,6 +36,7 @@ class WLine:
         self.concatenated_score_line = self.quarter_scores + hyphens
 
     def calc_quarter_totals(self):
+
         q1 = int(self.concatenated_score_line[:2])
         q2 = int(self.concatenated_score_line[2:4])
         q3 = int(self.concatenated_score_line[4:6])
