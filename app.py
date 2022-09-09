@@ -60,7 +60,8 @@ class Scrape:
         self.init_driver()
         # self.main()
     def grab_quarter(self):
-        self.current_quarter = self.driver.find_element(By.CLASS_NAME, 'ScoreCell__Time ScoreboardScoreCell__Time h9 clr-gray-01').text
+        self.current_quarter = self.driver.find_element(By.CLASS_NAME, 'ScoreCell__Time.ScoreboardScoreCell__Time.h9.clr-gray-01').text
+        print("self.current_quarter", self.current_quarter)
     def init_driver(self):
         self.chrome_options = Options()
         self.chrome_options.headless = self.headless
@@ -72,15 +73,18 @@ class Scrape:
     def get_box(self):
         self.boxes = self.driver.find_elements(
             By.CLASS_NAME, "Card.gameModules")
+
         self.get_matches()
 
     def get_matches(self):
         for box in self.boxes:
+
             date = box.find_element(
                 By.CLASS_NAME, 'Card__Header__Title.Card__Header__Title--no-theme')
             print(f'Day {self.day_count}: {date.text}')
             logging.info(
                 f'{self.log_pre_string}: Day {self.day_count}: {date.text}')
+
 
             self.matches = box.find_elements(
                 By.CLASS_NAME, 'ScoreboardScoreCell__Competitors')
@@ -88,6 +92,7 @@ class Scrape:
 
     def get_competitors(self):
         for match in self.matches:
+            self.grab_quarter()
             logging.info(f'{self.log_pre_string}: new match')
             self.competitors = match.find_elements(By.TAG_NAME, 'li')
             self.current_match = []
@@ -95,7 +100,7 @@ class Scrape:
                 self.current_match.append(each_competitor.text.split('\n')[0])
             print('self.current_match', self.current_match)
 
-            # self.grab_quarter()
+
 
             self.current_week_match_counter += 1
 
