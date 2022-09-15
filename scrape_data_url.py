@@ -30,6 +30,10 @@ driver.execute_cdp_cmd('Emulation.setScriptExecutionDisabled', {'value': True})
 result = driver.find_element(
     By.XPATH, """//*[@id="fittPageContainer"]/div[3]/div/div/div[1]/section/div/div/h1""")
 boxes = driver.find_elements(By.CLASS_NAME, "Card.gameModules")
+def get_current_quarter(scoreline):
+    if scoreline.split(' ')[0] == "FINAL":
+        return scoreline.split(' ')[0]
+    return scoreline.split(' ')[2]
 
 for box in boxes:
     date = box.find_element(
@@ -51,13 +55,9 @@ for box in boxes:
         is_match_completed = False
         match_not_started = False
         with open('each-text.txt', "a") as f:
-            # f.write(each.text + '\n')
             f.write(scoreboard_score_cell[0].text.replace('\n', ' ') + "\n")
-        time = scoreboard_score_cell[0].text.split(' ')[0]
-        # print('scoreboard_score_cell[0].text', scoreboard_score_cell[0].text)
-        print('')
         scoreline = scoreboard_score_cell[0].text.replace('\n', ' ')
-        print('scoreline', scoreline)
+        # print('scoreline', scoreline) # keep scoreline 9:31 - 2nd 1 2 3 4 T
         if search("1st", scoreline) or search("2nd", scoreline) or search("3rd", scoreline) or search("4th", scoreline) or search("OT", scoreline):
             is_match_live = True
         if search("FINAL",scoreline):
@@ -65,22 +65,36 @@ for box in boxes:
         if search("PM", scoreline) or search("AM", scoreline):
             match_not_started=True
 
-        print('is_match_live', is_match_live)
-        print('is_match_completed', is_match_completed)
-        print('match_not_started', match_not_started)
+        # print('is_match_live', is_match_live) #keep
+        # print('is_match_completed', is_match_completed) #keep
+        # print('match_not_started', match_not_started) #keep
         if is_match_live or is_match_completed:
+            current_quarter = get_current_quarter(scoreline)
+            print('current_quarter', current_quarter)
             for competitor in competitors:
-                print('competitor: ',competitor.text.split(' ')[0])
+                current_competitor = competitor.text.split('\n')[0]
+                print('competitor: ',current_competitor)
                 team_scores_all_quarters = competitor.find_elements(By.CLASS_NAME, 'ScoreboardScoreCell_Linescores.football.flex.justify-end')
                 quarters = competitor.find_elements(By.CLASS_NAME, 'ScoreboardScoreCell__Value.flex.justify-center.pl2.football')
 
-
-                print('quarters length:', len(quarters))
-                for each_score_B in quarters:
-                    print('each_score_B',each_score_B.text)
-            print('')
+                row_scores = ''
+                for each_score_B in quarters: # will iterate at least 4 times
+                    # print('each_score_B',each_score_B.text)
+                    delimiter = '|'
+                    quarter_score = each_score_B.text
+                    if len(quarter_score) == 1:
+                        quarter_score = "0" + quarter_score + delimiter
+                    if len(quarter_score) == 2:
+                        quarter_score = quarter_score + delimiter
+                    if quarter_score == '':
+                        quarter_score = "00" + delimiter
+                    row_scores += quarter_score
+                    # print("   each_score_B.text == ''", each_score_B.text == '') # keep. TRUE when quarter has not started yet!
+                print('row_scores: ', row_scores)
         elif match_not_started:
+            print('   match has not started!')
             pass
+        print('')
 print(result.text)
 driver.quit()
 
