@@ -5,6 +5,7 @@ from selenium import webdriver
 from dotenv import load_dotenv
 from re import search
 import os
+import time
 import app
 load_dotenv()
 CHROME_DRIVER_PATH = os.getenv('CHROME_DRIVER_PATH') + "/chromedriver"
@@ -13,6 +14,50 @@ with open('test.html', 'r', encoding='utf-8') as f:
     html_string = f.read()
 
 # print(html_string)
+def construct_row(quarter, competitor, scores):
+    # tack on placeholder 0's for no OT
+    header = 'Q1|Q2|Q3|Q4|F/OT'
+    delimiter = '|'
+    # if quarter == '1st':
+    quarter = quarter.ljust(20, '-')
+    header = quarter + header
+    no_ot = len(scores) == 12
+    no_ot_placeholder = 'NA'
+    if no_ot:
+        scores = scores + no_ot_placeholder + delimiter
+    # add competitor to row
+    competitor = competitor.ljust(20, '-') + scores
+    # Raiders-------------00|10|00|17|00
+    # calc total scores and add to row
+    q1=int(scores[:2])
+    q2=int(scores[3:5])
+    q3=int(scores[6:8])
+    q4=int(scores[9:11])
+    if scores[12:14] != no_ot_placeholder:
+        ot=int(scores[12:14])
+    else:
+        ot=0
+
+
+    pos1 = str(q1).rjust(2, '0')
+    pos2 = str(q1 + q2).rjust(2, '0')
+    pos3 = str(q1 + q2 + q3).rjust(2, '0')
+    pos4 = str(q1 + q2 + q3 + q4).rjust(2, '0')
+    pos5 = str(q1 + q2 + q3 + q4 + ot).rjust(2, '0')
+    quarter_scores = pos1 + delimiter + pos2 + delimiter + pos3 + delimiter + pos4 + delimiter + pos5 + delimiter
+    quarter_scores = "-" * 20 +  quarter_scores
+
+    # print('header', header)
+    # print('competitor', competitor)
+    # print('quarter_scores', quarter_scores)
+    line_break = '\n'
+    line = header + line_break + competitor + line_break + quarter_scores + line_break
+    print(line)
+    return line
+# construct_row('1st', 'Raiders', '05|05|05|05|05')
+# print('sleeping')
+# time.sleep(50)
+
 chrome_options = Options()
 # chrome_options.headless = True
 service = Service(executable_path=CHROME_DRIVER_PATH)
@@ -21,6 +66,7 @@ driver.implicitly_wait(50)
 url = 'http://127.0.0.1:5500/live-2nd-q.html'
 # url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2021/seasontype/2' #OT
 # url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2022/seasontype/2'
+# handle canceled games
 driver.get(url)
 driver.execute_cdp_cmd('Emulation.setScriptExecutionDisabled', {'value': True})
 #driver.execute_script("window.stop();");
@@ -31,7 +77,7 @@ result = driver.find_element(
     By.XPATH, """//*[@id="fittPageContainer"]/div[3]/div/div/div[1]/section/div/div/h1""")
 boxes = driver.find_elements(By.CLASS_NAME, "Card.gameModules")
 def get_current_quarter(scoreline):
-    if scoreline.split(' ')[0] == "FINAL":
+    if scoreline.split(' ')[0] == "FINAL" or scoreline.split(' ')[0] == "FINAL/OT":
         return scoreline.split(' ')[0]
     return scoreline.split(' ')[2]
 
@@ -91,6 +137,7 @@ for box in boxes:
                     row_scores += quarter_score
                     # print("   each_score_B.text == ''", each_score_B.text == '') # keep. TRUE when quarter has not started yet!
                 print('row_scores: ', row_scores)
+                construct_row(current_quarter, current_competitor, row_scores)
         elif match_not_started:
             print('   match has not started!')
             pass
