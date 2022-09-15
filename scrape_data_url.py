@@ -63,8 +63,8 @@ chrome_options = Options()
 service = Service(executable_path=CHROME_DRIVER_PATH)
 driver = webdriver.Chrome(options=chrome_options, service=service)
 driver.implicitly_wait(50)
-url = 'http://127.0.0.1:5500/live-2nd-q.html'
-# url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2021/seasontype/2' #OT
+# url = 'http://127.0.0.1:5500/live-2nd-q.html'
+url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2021/seasontype/2' #OT
 # url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2022/seasontype/2'
 # handle canceled games
 driver.get(url)
@@ -87,11 +87,12 @@ for box in boxes:
     matches = box.find_elements(By.CLASS_NAME, 'Scoreboard__Column.flex-auto.Scoreboard__Column--1.Scoreboard__Column--Score')
     for match in matches:
         competitors = match.find_elements(By.TAG_NAME, 'li')
+        print("*".ljust(40, '*'))
 
         current_match = []
         for competitor in competitors:
             current_match.append(competitor.text.split('\n')[0])
-        print('current match', current_match)
+        print(" "*10, current_match[0], ' @ ', current_match[1])
         scoreboard_score_cell = match.find_elements(By.CLASS_NAME, """ScoreboardScoreCell__Overview.flex.pb3.w-100""")
         # if each.text contains a time, it is either ongoing or scheduled and not yet started
         # if each.text has 1st 2nd 3rd 4th or OT in it, it is ongoing
@@ -116,10 +117,10 @@ for box in boxes:
         # print('match_not_started', match_not_started) #keep
         if is_match_live or is_match_completed:
             current_quarter = get_current_quarter(scoreline)
-            print('current_quarter', current_quarter)
+            # print('current_quarter', current_quarter)
             for competitor in competitors:
                 current_competitor = competitor.text.split('\n')[0]
-                print('competitor: ',current_competitor)
+                # print('competitor: ',current_competitor)
                 team_scores_all_quarters = competitor.find_elements(By.CLASS_NAME, 'ScoreboardScoreCell_Linescores.football.flex.justify-end')
                 quarters = competitor.find_elements(By.CLASS_NAME, 'ScoreboardScoreCell__Value.flex.justify-center.pl2.football')
 
@@ -136,12 +137,12 @@ for box in boxes:
                         quarter_score = "00" + delimiter
                     row_scores += quarter_score
                     # print("   each_score_B.text == ''", each_score_B.text == '') # keep. TRUE when quarter has not started yet!
-                print('row_scores: ', row_scores)
+                # print('row_scores: ', row_scores)
                 construct_row(current_quarter, current_competitor, row_scores)
         elif match_not_started:
             print('   match has not started!')
             pass
-        print('')
+        # print("*".ljust(40, '*'))
 print(result.text)
 driver.quit()
 
