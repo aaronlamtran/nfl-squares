@@ -181,7 +181,7 @@ class Scrape:
         self.row_template = ["00", "00", "00", "00", "00"] #reset
         row_scores = "".join(str(x) for x in row_scores)
         logging.info(f'{self.log_pre_string}: quarter scores formatted')
-        print('ROW_SCORES', row_scores)
+        # print('ROW_SCORES', row_scores)
         line = lineclass.WLine(row_scores)
         print(line.get_line())
         self.score_file.write(row_scores + '\n')
@@ -197,7 +197,8 @@ class Scrape:
         self.year = year
         self.week = week  # TODO handle season_type
         self.update_log_string()
-        link = f'{BASE}{self.week}/year/{self.year}/seasontype/{self.season_type}'
+        # link = f'{BASE}{self.week}/year/{self.year}/seasontype/{self.season_type}'
+        link = 'http://127.0.0.1:5500/live-2nd-q.html'
         print(link)
         self.driver.get(link)
         self.reset_week_game_counter()
