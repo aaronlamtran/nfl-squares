@@ -14,6 +14,8 @@ class WLine:
             self.quarter_scores = '0,0,0,0'
         if '-' in self.quarter_scores:
             self.quarter_scores = self.quarter_scores.replace('-', '0')
+        # if len(self.quarter_scores.split(',')) < 4:
+
 
     def make_score_string(self):
         quarters = self.quarter_scores.split(',')
@@ -34,6 +36,7 @@ class WLine:
         self.concatenated_score_line = self.quarter_scores + hyphens
 
     def calc_quarter_totals(self):
+
         q1 = int(self.concatenated_score_line[:2])
         q2 = int(self.concatenated_score_line[2:4])
         q3 = int(self.concatenated_score_line[4:6])
@@ -56,27 +59,3 @@ class WLine:
         return self.concatenated_score_line
 
 
-# test_none = WLine('3,3,7,-')
-# print(test_none.get_line())
-# example_quarter_scores = '6,10,3,8'
-# example_quarter_scores_single_digits = '3,3,3,3,3'
-
-# example_quarter_scores_with_OT = '14,7,3,10,7'
-
-
-# line = WLine(example_quarter_scores)
-# line_single_digits = WLine(example_quarter_scores_single_digits)
-# line_ot = WLine(example_quarter_scores_with_OT)
-
-# print(line.get_line())
-# print(line_single_digits.get_line())
-# print(line_ot.get_line())
-
-# 6,10,3,8
-# 0610030800----------0616192700
-
-# 3,3,3,3,3
-# 0303030303----------0306091215
-
-# 14,7,3,10,7
-# 1407031007----------1421243441

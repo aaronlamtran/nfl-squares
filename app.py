@@ -47,6 +47,7 @@ class Scrape:
         self.single_year = single_year
         self.week = week
         self.current_week_match_counter = 0
+        self.row_template = ["00", "00", "00", "00", "00"]
         self.team_one = team_one
         self.team_two = team_two
         self.season_type = season_type
@@ -55,9 +56,12 @@ class Scrape:
         self.season_type_string = ''
         self.score_file = open("scores.txt", 'a')
         self.log_pre_string = f'Y:{self.year}-W:{self.week}-ST:{self.season_type}'
+        self.current_quarter = ''
         self.init_driver()
         # self.main()
-
+    def grab_quarter(self):
+        self.current_quarter = self.driver.find_element(By.CLASS_NAME, 'ScoreCell__Time.ScoreboardScoreCell__Time.h9.clr-gray-01').text
+        print("self.current_quarter", self.current_quarter)
     def init_driver(self):
         self.chrome_options = Options()
         self.chrome_options.headless = self.headless
@@ -69,14 +73,18 @@ class Scrape:
     def get_box(self):
         self.boxes = self.driver.find_elements(
             By.CLASS_NAME, "Card.gameModules")
+
         self.get_matches()
 
     def get_matches(self):
         for box in self.boxes:
+
             date = box.find_element(
                 By.CLASS_NAME, 'Card__Header__Title.Card__Header__Title--no-theme')
             print(f'Day {self.day_count}: {date.text}')
-            logging.info(f'{self.log_pre_string}: Day {self.day_count}: {date.text}')
+            logging.info(
+                f'{self.log_pre_string}: Day {self.day_count}: {date.text}')
+
 
             self.matches = box.find_elements(
                 By.CLASS_NAME, 'ScoreboardScoreCell__Competitors')
@@ -84,13 +92,16 @@ class Scrape:
 
     def get_competitors(self):
         for match in self.matches:
-            # print(match.text + '\n\n')
+            self.grab_quarter()
             logging.info(f'{self.log_pre_string}: new match')
             self.competitors = match.find_elements(By.TAG_NAME, 'li')
             self.current_match = []
             for each_competitor in self.competitors:
                 self.current_match.append(each_competitor.text.split('\n')[0])
             print('self.current_match', self.current_match)
+
+
+
             self.current_week_match_counter += 1
 
             self.season_type_string = self.pre_reg_post[str(self.season_type)]
@@ -106,7 +117,7 @@ class Scrape:
             if not is_dir_exist_flattened:
                 os.makedirs(path_flattened)
 
-            file_extension = '.csv'
+            file_extension = '.txt'
             file_extension_flattened = '.txt'
             file_pre_name_counter = str(self.current_week_match_counter)
 
@@ -117,10 +128,12 @@ class Scrape:
             filename_flattened = f'{file_pre_name_counter}-{self.current_match[0].lower()}-{self.current_match[1].lower() + file_extension_flattened}'
 
             absolute_path = os.path.join(path, filename)
-            absolute_path_flattened = os.path.join(path_flattened, filename_flattened)
+            absolute_path_flattened = os.path.join(
+                path_flattened, filename_flattened)
 
             logging.info(f'{self.log_pre_string}: creating {absolute_path}')
-            logging.info(f'{self.log_pre_string}: creating {absolute_path_flattened}')
+            logging.info(
+                f'{self.log_pre_string}: creating {absolute_path_flattened}')
 
             self.current_match_file = open(absolute_path, 'w')
             self.flattened_match_file = open(absolute_path_flattened, 'w')
@@ -140,36 +153,57 @@ class Scrape:
 
             self.team_scores_all_quarters = competitor.find_elements(
                 By.CLASS_NAME, 'ScoreboardScoreCell_Linescores.football.flex.justify-end')
+
+            try:
+                self.team_scores_all_quarters = self.team_scores_all_quarters[0].text.split("\n")
+            except Exception as error:
+                logging.error(error)
+
+            try:
+                for i in range(len(self.team_scores_all_quarters)):
+
+                    if len(self.team_scores_all_quarters[i]) == 1:
+
+                        self.team_scores_all_quarters[i] = "0" + self.team_scores_all_quarters[i]
+                        self.row_template[i] = self.team_scores_all_quarters[i]
+                    else:
+                        self.row_template[i] = self.team_scores_all_quarters[i]
+                temporary = "".join(self.row_template)
+                self.team_scores_all_quarters = temporary
+
+            except Exception as error:
+                logging.error(error)
             self.format_quarter_scores()
 
+
     def format_quarter_scores(self):
-        row_scores = []
-        for quarter_score in self.team_scores_all_quarters:
-            text = quarter_score.text.replace("\n", ",")
-            text = text.replace("'", '')
-            row_scores.append(text)
-        row_scores = " ".join(str(x) for x in row_scores)
+        row_scores = self.team_scores_all_quarters
+        self.row_template = ["00", "00", "00", "00", "00"] #reset
+        row_scores = "".join(str(x) for x in row_scores)
         logging.info(f'{self.log_pre_string}: quarter scores formatted')
-        print(row_scores)
+        # print('ROW_SCORES', row_scores)
         line = lineclass.WLine(row_scores)
         print(line.get_line())
         self.score_file.write(row_scores + '\n')
-        self.score_file.write(f'from Wline:{line.get_line()}')
+        self.score_file.write(f'from Wline:{line.get_line()}\n')
 
-        # insert method to calculate totals from row_scores
+
         self.current_match_file.write(row_scores + '\n')
         self.flattened_match_file.write(line.get_line() + '\n')
-        logging.info(f'{self.log_pre_string}: score_file: new formatted row added')
+        logging.info(
+            f'{self.log_pre_string}: score_file: new formatted row added')
 
-    def process_single_week(self, year=2021, week=2):
+    def process_single_week(self, year=2022, week=1):
         self.year = year
-        self.week = week #TODO handle season_type
+        self.week = week  # TODO handle season_type
         self.update_log_string()
-        link = f'{BASE}{self.week}/year/{self.year}/seasontype/{self.season_type}'
+        # link = f'{BASE}{self.week}/year/{self.year}/seasontype/{self.season_type}'
+        link = 'http://127.0.0.1:5500/live-2nd-q.html'
         print(link)
         self.driver.get(link)
+        self.reset_week_game_counter()
         self.get_box()
-        self.close_driver()
+        # self.close_driver()
 
     def reset_week_game_counter(self):
         self.current_week_match_counter = 0
@@ -198,6 +232,13 @@ class Scrape:
                 self.get_box()
         # self.close_driver()
 
+
+    def keep_looping_week(self, year, week):
+        self.year = year
+        self.week = week
+        while True:
+            self.process_single_week(year, week)
+
     def close_driver(self):
         self.driver.close()
 
@@ -208,7 +249,7 @@ class Scrape:
             self.year = year
             self.process_season()
         self.close_driver()
-            # scrape = Scrape(year=year, headless=True)
+        # scrape = Scrape(year=year, headless=True)
 
     def main(self):
         if self.mode == 'season':
@@ -224,8 +265,8 @@ def script():
         start_time = time.time()
 
         scrape = Scrape(headless=True)
-        scrape.process_years(from_year=2010, to_year=2022)
-        # scrape.process_single_week(year=2003, week=7)
+        # scrape.process_years(from_year=2010, to_year=2022)
+        scrape.process_single_week(year=2017, week=1)
 
         end_time = time.time()
         execution_time = str(end_time - start_time)
@@ -243,7 +284,6 @@ def script():
     except Exception as error:
         print(error)
         logging.error(error)
-
 
 
 if __name__ == "__main__":
