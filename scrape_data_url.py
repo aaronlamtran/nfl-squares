@@ -19,10 +19,11 @@ def construct_row(quarter, competitor, scores):
     header = 'Q1|Q2|Q3|Q4|F/OT'
     delimiter = '|'
     # if quarter == '1st':
-    quarter = quarter.ljust(20, '-')
-    header = quarter + header
+    quarter_for_header = quarter.ljust(20, '-')
+    header = quarter_for_header + header
     no_ot = len(scores) == 12
     no_ot_placeholder = 'NA'
+    quarter_yet_to_happen_ph = 'NA'
     if no_ot:
         scores = scores + no_ot_placeholder + delimiter
     # add competitor to row
@@ -44,7 +45,17 @@ def construct_row(quarter, competitor, scores):
     pos3 = str(q1 + q2 + q3).rjust(2, '0')
     pos4 = str(q1 + q2 + q3 + q4).rjust(2, '0')
     pos5 = str(q1 + q2 + q3 + q4 + ot).rjust(2, '0')
-    quarter_scores = pos1 + delimiter + pos2 + delimiter + pos3 + delimiter + pos4 + delimiter + pos5 + delimiter
+    # quarter_scores = ''
+    if quarter == '1st':
+        quarter_scores = pos1 + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter
+    if quarter == '2nd':
+        quarter_scores = pos1 + delimiter + pos2 + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter
+    if quarter == '3rd':
+        quarter_scores = pos1 + delimiter + pos2 + delimiter + pos3 + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter
+    if quarter == '4th':
+        quarter_scores = pos1 + delimiter + pos2 + delimiter + pos3 + delimiter + pos4 + delimiter + quarter_yet_to_happen_ph + delimiter
+    if quarter == 'FINAL' or quarter == 'FINAL/OT':
+        quarter_scores = pos1 + delimiter + pos2 + delimiter + pos3 + delimiter + pos4 + delimiter + pos5 + delimiter
     quarter_scores = "-" * 20 +  quarter_scores
 
     # print('header', header)
@@ -54,7 +65,7 @@ def construct_row(quarter, competitor, scores):
     line = header + line_break + competitor + line_break + quarter_scores + line_break
     print(line)
     return line
-# construct_row('1st', 'Raiders', '05|05|05|05|05')
+# construct_row('FINAL', 'Raiders', '05|05|05|05|05')
 # print('sleeping')
 # time.sleep(50)
 
@@ -63,8 +74,8 @@ chrome_options = Options()
 service = Service(executable_path=CHROME_DRIVER_PATH)
 driver = webdriver.Chrome(options=chrome_options, service=service)
 driver.implicitly_wait(50)
-# url = 'http://127.0.0.1:5500/live-2nd-q.html'
-url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2021/seasontype/2' #OT
+url = 'http://127.0.0.1:5500/live-2nd-q.html'
+# url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2021/seasontype/2' #OT
 # url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2022/seasontype/2'
 # handle canceled games
 driver.get(url)
