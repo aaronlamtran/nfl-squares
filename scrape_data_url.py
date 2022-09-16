@@ -18,7 +18,6 @@ def construct_row(quarter, competitor, scores):
     # tack on placeholder 0's for no OT
     header = 'Q1|Q2|Q3|Q4|F/OT'
     delimiter = '|'
-    # if quarter == '1st':
     quarter_for_header = quarter.ljust(20, '-')
     header = quarter_for_header + header
     no_ot = len(scores) == 12
@@ -39,13 +38,12 @@ def construct_row(quarter, competitor, scores):
     else:
         ot=0
 
-
     pos1 = str(q1).rjust(2, '0')
     pos2 = str(q1 + q2).rjust(2, '0')
     pos3 = str(q1 + q2 + q3).rjust(2, '0')
     pos4 = str(q1 + q2 + q3 + q4).rjust(2, '0')
     pos5 = str(q1 + q2 + q3 + q4 + ot).rjust(2, '0')
-    # quarter_scores = ''
+
     if quarter == '1st':
         quarter_scores = pos1 + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter
     if quarter == '2nd':
@@ -74,9 +72,10 @@ chrome_options = Options()
 service = Service(executable_path=CHROME_DRIVER_PATH)
 driver = webdriver.Chrome(options=chrome_options, service=service)
 driver.implicitly_wait(50)
-url = 'http://127.0.0.1:5500/live-2nd-q.html'
+# url = 'http://127.0.0.1:5500/live-2nd-q.html'
 # url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2021/seasontype/2' #OT
 # url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2022/seasontype/2'
+url = 'https://www.espn.com/nfl/scoreboard/_/week/2/year/2022/seasontype/2' #1Q
 # handle canceled games
 driver.get(url)
 driver.execute_cdp_cmd('Emulation.setScriptExecutionDisabled', {'value': True})
@@ -103,7 +102,9 @@ for box in boxes:
         current_match = []
         for competitor in competitors:
             current_match.append(competitor.text.split('\n')[0])
-        print(" "*10, current_match[0], ' @ ', current_match[1])
+        team_at_team_string = current_match[0] + ' @ ' + current_match[1]
+
+        print(team_at_team_string.center(41))
         scoreboard_score_cell = match.find_elements(By.CLASS_NAME, """ScoreboardScoreCell__Overview.flex.pb3.w-100""")
         # if each.text contains a time, it is either ongoing or scheduled and not yet started
         # if each.text has 1st 2nd 3rd 4th or OT in it, it is ongoing
@@ -151,10 +152,10 @@ for box in boxes:
                 # print('row_scores: ', row_scores)
                 construct_row(current_quarter, current_competitor, row_scores)
         elif match_not_started:
-            print('   match has not started!')
+            print('match has not started!'.center(40))
             pass
-        # print("*".ljust(40, '*'))
-print(result.text)
+
+
 driver.quit()
 
 # driver.executeScript("$(document.body).trigger('load');")
