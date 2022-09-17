@@ -177,7 +177,9 @@ def app():
                         f.write(asterisks)
                         f.write(team_line)
                         f.write(date)
+                        print(date)
                         f.write(header)
+                        print(header)
 
                     # with open('live_scores.txt', 'a') as f:
                         data_row = ''
@@ -198,6 +200,7 @@ def app():
                                 row_scores += quarter_score
 
                             data_row +=  construct_row(current_quarter, current_competitor, row_scores)
+
                         print(data_row)
                         f.write(data_row)
 
@@ -216,7 +219,7 @@ def app():
                     print(date)
                     print(starting_at_time)
                     pass
-
+    end_time = time.time()
     execution_time = end_time - start_time
     print('execution_time: ', str(execution_time), 's')
     driver.quit()
@@ -230,5 +233,4 @@ if __name__ == '__main__':
         app()
         interval = 60
         print(f'sleeping for {interval}s..')
-        end_time = time.time()
         time.sleep(interval)
