@@ -29,28 +29,76 @@ def construct_row(quarter, competitor, scores):
     # tack on placeholder 0's for no OT
     delimiter = '|'
     no_ot = len(scores) == 12
-    no_ot_placeholder = 'NA'
-    quarter_yet_to_happen_ph = 'NA'
+    no_ot_placeholder = '--'
+    quarter_yet_to_happen_ph = '--'
     if no_ot:
         scores = scores + no_ot_placeholder + delimiter
     # add competitor to row
     competitor = competitor.ljust(20, '-') + scores
     # Raiders-------------00|10|00|17|00
     # calc total scores and add to row
-    q1=int(scores[:2])
-    q2=int(scores[3:5])
-    q3=int(scores[6:8])
-    q4=int(scores[9:11])
     if scores[12:14] != no_ot_placeholder:
         ot=int(scores[12:14])
     else:
         ot=0
+    if quarter == '1st':
+        q1=int(scores[:2])
+        q2='--'
+        q3='--'
+        q4='--'
+        pos1 = str(q1).rjust(2, '0')
+        pos2 = '--'
+        pos3 = '--'
+        pos4 = '--'
+        pos5 = '--'
+    if quarter == '2nd' or quarter == 'Halftime' or quarter == '2':
+        q1=int(scores[:2])
+        q2=int(scores[3:5])
+        q3='--'
+        q4='--'
+        pos1 = str(q1).rjust(2, '0')
+        pos2 = str(q1 + q2).rjust(2, '0')
+        pos3 = '--'
+        pos4 = '--'
+        pos5 = '--'
+    if quarter == '3rd':
+        q1=int(scores[:2])
+        q2=int(scores[3:5])
+        q3=int(scores[6:8])
+        q4='--'
+        pos1 = str(q1).rjust(2, '0')
+        pos2 = str(q1 + q2).rjust(2, '0')
+        pos3 = str(q1 + q2 + q3).rjust(2, '0')
+        pos4 = '--'
+        pos5 = '--'
+    if quarter == '4th':
+        q1=int(scores[:2])
+        q2=int(scores[3:5])
+        q3=int(scores[6:8])
+        q4=int(scores[9:11])
+        pos1 = str(q1).rjust(2, '0')
+        pos2 = str(q1 + q2).rjust(2, '0')
+        pos3 = str(q1 + q2 + q3).rjust(2, '0')
+        pos4 = str(q1 + q2 + q3 + q4).rjust(2, '0')
+        pos5 = '--'
 
-    pos1 = str(q1).rjust(2, '0')
-    pos2 = str(q1 + q2).rjust(2, '0')
-    pos3 = str(q1 + q2 + q3).rjust(2, '0')
-    pos4 = str(q1 + q2 + q3 + q4).rjust(2, '0')
-    pos5 = str(q1 + q2 + q3 + q4 + ot).rjust(2, '0')
+    if quarter == 'FINAL' or quarter == 'FINAL/OT':
+        q1=int(scores[:2])
+        q2=int(scores[3:5])
+        q3=int(scores[6:8])
+        q4=int(scores[9:11])
+        pos1 = str(q1).rjust(2, '0')
+        pos2 = str(q1 + q2).rjust(2, '0')
+        pos3 = str(q1 + q2 + q3).rjust(2, '0')
+        pos4 = str(q1 + q2 + q3 + q4).rjust(2, '0')
+        pos5 = str(q1 + q2 + q3 + q4 + ot).rjust(2, '0')
+
+
+    # pos1 = str(q1).rjust(2, '0')
+    # pos2 = str(q1 + q2).rjust(2, '0')
+    # pos3 = str(q1 + q2 + q3).rjust(2, '0')
+    # pos4 = str(q1 + q2 + q3 + q4).rjust(2, '0')
+    # pos5 = str(q1 + q2 + q3 + q4 + ot).rjust(2, '0')
 
     if quarter == '1st':
         quarter_scores = pos1 + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter
@@ -93,13 +141,14 @@ def app():
     #driver.execute_script("window.stop();");
 
 
-    boxes = driver.find_elements(By.CLASS_NAME, "Card.gameModules")
-    with open('live_scores.txt', 'a') as f:
-        def get_current_quarter(scoreline):
-            if scoreline.split(' ')[0] == "FINAL" or scoreline.split(' ')[0] == "FINAL/OT":
-                return scoreline.split(' ')[0]
-            return scoreline.split(' ')[2]
+    def get_current_quarter(scoreline):
+        if scoreline.split(' ')[0] == "FINAL" or scoreline.split(' ')[0] == "FINAL/OT":
+            return scoreline.split(' ')[0]
+        return scoreline.split(' ')[2]
 
+    with open('live_scores.txt', 'w') as f:
+        f.write('hello')
+        boxes = driver.find_elements(By.CLASS_NAME, "Card.gameModules")
         for box in boxes:
             date = box.find_element(
                 By.CLASS_NAME, 'Card__Header__Title.Card__Header__Title--no-theme').text.center(40) + line_break
@@ -165,7 +214,7 @@ def app():
                                 if len(quarter_score) == 2:
                                     quarter_score = quarter_score + delimiter
                                 if quarter_score == '':
-                                    quarter_score = "00" + delimiter
+                                    quarter_score = "--" + delimiter
                                 row_scores += quarter_score
 
                             data_row +=  construct_row(current_quarter, current_competitor, row_scores)
