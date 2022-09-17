@@ -101,7 +101,7 @@ def app():
 
     for box in boxes:
         date = box.find_element(
-            By.CLASS_NAME, 'Card__Header__Title.Card__Header__Title--no-theme')
+            By.CLASS_NAME, 'Card__Header__Title.Card__Header__Title--no-theme').text.center(40) + line_break
         matches = box.find_elements(By.CLASS_NAME, 'Scoreboard__Column.flex-auto.Scoreboard__Column--1.Scoreboard__Column--Score')
         for match in matches:
             competitors = match.find_elements(By.TAG_NAME, 'li')
@@ -141,11 +141,12 @@ def app():
                 current_quarter = get_current_quarter(scoreline)
 
                 with open('live_scores.txt', 'w') as f:
-                    header = construct_header(current_quarter, time_stamp)
                     asterisks = "*" * 40 + line_break
                     team_line = team_at_team_string.center(40) + line_break
+                    header = construct_header(current_quarter, time_stamp)
                     f.write(asterisks)
                     f.write(team_line)
+                    f.write(date)
                     f.write(header)
 
                 with open('live_scores.txt', 'a') as f:
@@ -174,11 +175,16 @@ def app():
                 match_not_started_str = 'has not started'.center(40) + line_break
                 asterisks = "*" * 40 + line_break
                 team_line = team_at_team_string.center(40) + line_break
+                starting_at_time = scoreline.center(40) + line_break
                 with open('live_scores.txt', 'a') as f:
                     f.write(asterisks)
                     f.write(team_line)
-                    f.write(match_not_started_str)
-                print(match_not_started_str)
+                    f.write(date)
+                    # f.write(match_not_started_str)
+                    f.write(starting_at_time)
+                # print(match_not_started_str)
+                print(date)
+                print(starting_at_time)
                 pass
     driver.quit()
 
