@@ -109,10 +109,10 @@ def app():
     service = Service(executable_path=CHROME_DRIVER_PATH)
     driver = webdriver.Chrome(options=chrome_options, service=service)
     driver.implicitly_wait(50)
-    # url = 'http://127.0.0.1:5500/live-2nd-q.html'
+    url = 'http://127.0.0.1:5500/live-2nd-q.html'
     # url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2021/seasontype/2' #OT
     # url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2022/seasontype/2'
-    url = 'https://www.espn.com/nfl/scoreboard/_/week/2/year/2022/seasontype/2' #Live
+    # url = 'https://www.espn.com/nfl/scoreboard/_/week/2/year/2022/seasontype/2' #Live
     # handle canceled games
     print(url)
     driver.get(url)
