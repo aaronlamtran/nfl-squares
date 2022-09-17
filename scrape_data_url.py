@@ -1,3 +1,4 @@
+import ast
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -10,24 +11,23 @@ import app
 load_dotenv()
 CHROME_DRIVER_PATH = os.getenv('CHROME_DRIVER_PATH') + "/chromedriver"
 
-with open('test.html', 'r', encoding='utf-8') as f:
-    html_string = f.read()
 
-# print(html_string)
-def construct_row(quarter, competitor, scores, time_left_in_q):
-    # tack on placeholder 0's for no OT
+line_break = '\n'
+
+def construct_header(quarter, time_left_in_q):
     header = 'Q1|Q2|Q3|Q4|F/OT'
-    delimiter = '|'
-    # print('time_left_in_q', time_left_in_q)
-    # print('time_left_in_q != "FINAL/OT"', time_left_in_q != "FINAL/OT")
-    # print('time_left_in_q != "FINAL"', time_left_in_q != "FINAL")
     is_game_ended = search("FINAL", time_left_in_q)
     if is_game_ended:
         quarter_for_header = quarter
     else:
         quarter_for_header = quarter + '-' + time_left_in_q
     quarter_for_header = quarter_for_header.ljust(20, '-')
-    header = quarter_for_header + header
+    header = quarter_for_header + header + line_break
+    return header
+
+def construct_row(quarter, competitor, scores):
+    # tack on placeholder 0's for no OT
+    delimiter = '|'
     no_ot = len(scores) == 12
     no_ot_placeholder = 'NA'
     quarter_yet_to_happen_ph = 'NA'
@@ -69,9 +69,9 @@ def construct_row(quarter, competitor, scores, time_left_in_q):
     # print('header', header)
     # print('competitor', competitor)
     # print('quarter_scores', quarter_scores)
-    line_break = '\n'
-    line = header + line_break + competitor + line_break + quarter_scores + line_break
-    print(line)
+    # line_break = '\n'
+    # header + line_break +
+    line = competitor + line_break + quarter_scores + line_break
     return line
 # construct_row('FINAL', 'Raiders', '05|05|05|05|05')
 # print('sleeping')
@@ -92,10 +92,7 @@ def app():
     driver.execute_cdp_cmd('Emulation.setScriptExecutionDisabled', {'value': True})
     #driver.execute_script("window.stop();");
 
-    # driver.get("data:text/html;charset=utf-8," + html_string)
-    # driver.execute_script("$(document.body).trigger('load');")
-    result = driver.find_element(
-        By.XPATH, """//*[@id="fittPageContainer"]/div[3]/div/div/div[1]/section/div/div/h1""")
+
     boxes = driver.find_elements(By.CLASS_NAME, "Card.gameModules")
     def get_current_quarter(scoreline):
         if scoreline.split(' ')[0] == "FINAL" or scoreline.split(' ')[0] == "FINAL/OT":
@@ -142,30 +139,46 @@ def app():
             # print('match_not_started', match_not_started) #keep
             if is_match_live or is_match_completed:
                 current_quarter = get_current_quarter(scoreline)
-                # print('current_quarter', current_quarter)
-                for competitor in competitors:
-                    current_competitor = competitor.text.split('\n')[0]
-                    # print('competitor: ',current_competitor)
-                    team_scores_all_quarters = competitor.find_elements(By.CLASS_NAME, 'ScoreboardScoreCell_Linescores.football.flex.justify-end')
-                    quarters = competitor.find_elements(By.CLASS_NAME, 'ScoreboardScoreCell__Value.flex.justify-center.pl2.football')
 
-                    row_scores = ''
-                    for each_score_B in quarters: # will iterate at least 4 times
-                        # print('each_score_B',each_score_B.text)
-                        delimiter = '|'
-                        quarter_score = each_score_B.text
-                        if len(quarter_score) == 1:
-                            quarter_score = "0" + quarter_score + delimiter
-                        if len(quarter_score) == 2:
-                            quarter_score = quarter_score + delimiter
-                        if quarter_score == '':
-                            quarter_score = "00" + delimiter
-                        row_scores += quarter_score
-                        # print("   each_score_B.text == ''", each_score_B.text == '') # keep. TRUE when quarter has not started yet!
-                    # print('row_scores: ', row_scores)
-                    construct_row(current_quarter, current_competitor, row_scores, time_stamp)
+                with open('live_scores.txt', 'w') as f:
+                    header = construct_header(current_quarter, time_stamp)
+                    asterisks = "*" * 40 + line_break
+                    team_line = team_at_team_string.center(40) + line_break
+                    f.write(asterisks)
+                    f.write(team_line)
+                    f.write(header)
+
+                with open('live_scores.txt', 'a') as f:
+                    data_row = ''
+                    for competitor in competitors:
+                        current_competitor = competitor.text.split('\n')[0]
+                        quarters = competitor.find_elements(By.CLASS_NAME, 'ScoreboardScoreCell__Value.flex.justify-center.pl2.football')
+
+                        row_scores = ''
+                        for each_score_B in quarters: # will iterate at least 4 times
+                            delimiter = '|'
+                            quarter_score = each_score_B.text
+                            if len(quarter_score) == 1:
+                                quarter_score = "0" + quarter_score + delimiter
+                            if len(quarter_score) == 2:
+                                quarter_score = quarter_score + delimiter
+                            if quarter_score == '':
+                                quarter_score = "00" + delimiter
+                            row_scores += quarter_score
+
+                        data_row +=  construct_row(current_quarter, current_competitor, row_scores)
+                    print(data_row)
+                    f.write(data_row)
+
             elif match_not_started:
-                print('match has not started!'.center(40))
+                match_not_started_str = 'has not started'.center(40) + line_break
+                asterisks = "*" * 40 + line_break
+                team_line = team_at_team_string.center(40) + line_break
+                with open('live_scores.txt', 'a') as f:
+                    f.write(asterisks)
+                    f.write(team_line)
+                    f.write(match_not_started_str)
+                print(match_not_started_str)
                 pass
     driver.quit()
 
