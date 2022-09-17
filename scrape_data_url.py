@@ -43,34 +43,36 @@ def construct_row(quarter, competitor, scores):
         ot=0
     if quarter == '1st':
         q1=int(scores[:2])
-        q2='--'
-        q3='--'
-        q4='--'
+        q2=quarter_yet_to_happen_ph
+        q3=quarter_yet_to_happen_ph
+        q4=quarter_yet_to_happen_ph
         pos1 = str(q1).rjust(2, '0')
-        pos2 = '--'
-        pos3 = '--'
-        pos4 = '--'
-        pos5 = '--'
+        pos2 = quarter_yet_to_happen_ph
+        pos3 = quarter_yet_to_happen_ph
+        pos4 = quarter_yet_to_happen_ph
+        pos5 = quarter_yet_to_happen_ph
+
     if quarter == '2nd' or quarter == 'Halftime' or quarter == '2':
         q1=int(scores[:2])
         q2=int(scores[3:5])
-        q3='--'
-        q4='--'
+        q3=quarter_yet_to_happen_ph
+        q4=quarter_yet_to_happen_ph
         pos1 = str(q1).rjust(2, '0')
         pos2 = str(q1 + q2).rjust(2, '0')
-        pos3 = '--'
-        pos4 = '--'
-        pos5 = '--'
+        pos3 = quarter_yet_to_happen_ph
+        pos4 = quarter_yet_to_happen_ph
+        pos5 = quarter_yet_to_happen_ph
     if quarter == '3rd':
         q1=int(scores[:2])
         q2=int(scores[3:5])
         q3=int(scores[6:8])
-        q4='--'
+        q4=quarter_yet_to_happen_ph
         pos1 = str(q1).rjust(2, '0')
         pos2 = str(q1 + q2).rjust(2, '0')
         pos3 = str(q1 + q2 + q3).rjust(2, '0')
-        pos4 = '--'
-        pos5 = '--'
+        pos4 = quarter_yet_to_happen_ph
+        pos5 = quarter_yet_to_happen_ph
+
     if quarter == '4th':
         q1=int(scores[:2])
         q2=int(scores[3:5])
@@ -80,7 +82,7 @@ def construct_row(quarter, competitor, scores):
         pos2 = str(q1 + q2).rjust(2, '0')
         pos3 = str(q1 + q2 + q3).rjust(2, '0')
         pos4 = str(q1 + q2 + q3 + q4).rjust(2, '0')
-        pos5 = '--'
+        pos5 = quarter_yet_to_happen_ph
 
     if quarter == 'FINAL' or quarter == 'FINAL/OT':
         q1=int(scores[:2])
@@ -92,50 +94,27 @@ def construct_row(quarter, competitor, scores):
         pos3 = str(q1 + q2 + q3).rjust(2, '0')
         pos4 = str(q1 + q2 + q3 + q4).rjust(2, '0')
         pos5 = str(q1 + q2 + q3 + q4 + ot).rjust(2, '0')
+    quarter_scores = pos1 + delimiter + pos2 + delimiter + pos3 + delimiter + pos4 + delimiter + pos5 + delimiter
 
-
-    # pos1 = str(q1).rjust(2, '0')
-    # pos2 = str(q1 + q2).rjust(2, '0')
-    # pos3 = str(q1 + q2 + q3).rjust(2, '0')
-    # pos4 = str(q1 + q2 + q3 + q4).rjust(2, '0')
-    # pos5 = str(q1 + q2 + q3 + q4 + ot).rjust(2, '0')
-
-    if quarter == '1st':
-        quarter_scores = pos1 + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter
-    if quarter == '2nd':
-        quarter_scores = pos1 + delimiter + pos2 + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter
-    if quarter == 'Halftime' or quarter == '2':
-        quarter_scores = pos1 + delimiter + pos2 + delimiter + pos3 + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter
-    if quarter == '3rd':
-        quarter_scores = pos1 + delimiter + pos2 + delimiter + pos3 + delimiter + quarter_yet_to_happen_ph + delimiter + quarter_yet_to_happen_ph + delimiter
-    if quarter == '4th':
-        quarter_scores = pos1 + delimiter + pos2 + delimiter + pos3 + delimiter + pos4 + delimiter + quarter_yet_to_happen_ph + delimiter
-    if quarter == 'FINAL' or quarter == 'FINAL/OT':
-        quarter_scores = pos1 + delimiter + pos2 + delimiter + pos3 + delimiter + pos4 + delimiter + pos5 + delimiter
     quarter_scores = "-" * 20 +  quarter_scores
 
-    # print('header', header)
-    # print('competitor', competitor)
-    # print('quarter_scores', quarter_scores)
-    # line_break = '\n'
-    # header + line_break +
     line = competitor + line_break + quarter_scores + line_break
     return line
-# construct_row('FINAL', 'Raiders', '05|05|05|05|05')
-# print('sleeping')
-# time.sleep(50)
+
 def app():
+    start_time = time.time()
     print('working...')
     chrome_options = Options()
     chrome_options.headless = True
     service = Service(executable_path=CHROME_DRIVER_PATH)
     driver = webdriver.Chrome(options=chrome_options, service=service)
     driver.implicitly_wait(50)
-    url = 'http://127.0.0.1:5500/live-2nd-q.html'
+    # url = 'http://127.0.0.1:5500/live-2nd-q.html'
     # url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2021/seasontype/2' #OT
     # url = 'https://www.espn.com/nfl/scoreboard/_/week/1/year/2022/seasontype/2'
-    # url = 'https://www.espn.com/nfl/scoreboard/_/week/2/year/2022/seasontype/2' #Live
+    url = 'https://www.espn.com/nfl/scoreboard/_/week/2/year/2022/seasontype/2' #Live
     # handle canceled games
+    print(url)
     driver.get(url)
     driver.execute_cdp_cmd('Emulation.setScriptExecutionDisabled', {'value': True})
     #driver.execute_script("window.stop();");
@@ -147,7 +126,8 @@ def app():
         return scoreline.split(' ')[2]
 
     with open('live_scores.txt', 'w') as f:
-        f.write('hello')
+        # f.write('hello')
+        f.close()
         boxes = driver.find_elements(By.CLASS_NAME, "Card.gameModules")
         for box in boxes:
             date = box.find_element(
@@ -171,8 +151,8 @@ def app():
                 is_match_live = False
                 is_match_completed = False
                 match_not_started = False
-                with open('each-text.txt', "a") as f:
-                    f.write(scoreboard_score_cell[0].text.replace('\n', ' ') + "\n")
+                with open('each-text.txt', "a") as a:
+                    a.write(scoreboard_score_cell[0].text.replace('\n', ' ') + "\n")
                 scoreline = scoreboard_score_cell[0].text.replace('\n', ' ')
                 time_stamp = scoreboard_score_cell[0].text.replace('\n', ' ').split(' ')[0]
                 # print(time_stamp)
@@ -199,7 +179,7 @@ def app():
                         f.write(date)
                         f.write(header)
 
-                    with open('live_scores.txt', 'a') as f:
+                    # with open('live_scores.txt', 'a') as f:
                         data_row = ''
                         for competitor in competitors:
                             current_competitor = competitor.text.split('\n')[0]
@@ -236,6 +216,9 @@ def app():
                     print(date)
                     print(starting_at_time)
                     pass
+
+    execution_time = end_time - start_time
+    print('execution_time: ', str(execution_time), 's')
     driver.quit()
 
 
@@ -243,7 +226,9 @@ def app():
     # driver.executeScript("$(document.body).trigger('load');")
 if __name__ == '__main__':
     while True:
+
         app()
         interval = 60
         print(f'sleeping for {interval}s..')
+        end_time = time.time()
         time.sleep(interval)
