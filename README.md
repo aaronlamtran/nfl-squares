@@ -1,0 +1,1 @@
+This is a simple script to scrape nfl data from espn and calculate accumlated point totals per quarter for nfl squares purposes.

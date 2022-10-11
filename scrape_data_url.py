@@ -26,17 +26,13 @@ def construct_header(quarter, time_left_in_q):
     return header
 
 def construct_row(quarter, competitor, scores):
-    # tack on placeholder 0's for no OT
     delimiter = '|'
     no_ot = len(scores) == 12
     no_ot_placeholder = '--'
     quarter_yet_to_happen_ph = '--'
     if no_ot:
         scores = scores + no_ot_placeholder + delimiter
-    # add competitor to row
     competitor = competitor.ljust(20, '-') + scores
-    # Raiders-------------00|10|00|17|00
-    # calc total scores and add to row
     if scores[12:14] != no_ot_placeholder:
         ot=int(scores[12:14])
     else:

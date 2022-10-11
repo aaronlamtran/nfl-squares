@@ -6,11 +6,10 @@ from flask import json
 app = Flask(__name__)
 
 
-@app.route('/try_this')
-def return_something():
+@app.route('/scores')
+def send_scores_file():
 
     return send_file("live_scores.txt")
-    pass
 
 
 if __name__ == "__main__":
